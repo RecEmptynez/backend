@@ -1,0 +1,21 @@
+fastapi
+uvicorn
+
+#for template 
+jinja2 
+
+#for database   
+sqlalchemy         
+psycopg2
+
+#for loading environment variables  
+python-dotenv
+
+pydantic[email]
+
+passlib[bcrypt]
+
+#for testing     
+pytest
+requests
+httpx
