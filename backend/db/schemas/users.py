@@ -9,7 +9,7 @@ class UserCreate(BaseModel):
     password : str
 
 class ShowUser(BaseModel):
-    username : str 
+    username : str
     email : EmailStr
     is_active : bool
 
