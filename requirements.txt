@@ -1,6 +1,7 @@
 fastapi
 uvicorn
-
+beautifulsoup4
+spacy
 #for database   
 sqlalchemy         
 psycopg2

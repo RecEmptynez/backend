@@ -1,7 +1,9 @@
 from bs4 import BeautifulSoup
 import requests
 import spacy
-
+#******************************
+#Must run python -m spacy download sv_core_news_sm
+#******************************
 # Print iterations progress
 def printProgressBar (iteration, total, prefix = '', suffix = '', decimals = 1, length = 100, fill = '█', printEnd = "\r"):
     """
