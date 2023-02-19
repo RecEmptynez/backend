@@ -26,40 +26,59 @@ def printProgressBar (iteration, total, prefix = '', suffix = '', decimals = 1, 
     if iteration == total: 
         print()
 
+
+#Get the root of the ingredient aka the ingredient name
 def get_ingredient(ingredient,nlp):
-    # Remove adjectives
     doc = nlp(ingredient)
     for token in doc:
         if token.dep_ == "ROOT":
             return token.text
 
 def generate_ingredients(nlp):
+    
+    #Get the ica recipe page
     url = "https://www.ica.se/recept/?sort=rating"
     base_url = "https://www.ica.se"
     soup = BeautifulSoup(requests.get(url).text, "html.parser")
     cards = soup.find_all("a", {"class": "recipe-card__content__title font-rubrik-2--mid"}, href=True)
+    
+    #Get the links to the recipes
     links = [base_url + card['href'] for card in cards]
-
+    
+    #Initialize the ingredients list
     ingredients_list = []
+    
+    #Print the progress bar
     printProgressBar(0, len(links), prefix = 'Scraping:', suffix = 'Complete', length = 50)
     
+    #Loop through the links and get the ingredients
     for i,link in enumerate(links):
+        #Get the recipe page
         soup = BeautifulSoup(requests.get(link).text, "html.parser")
         
+        #Print the progress bar
         printProgressBar(i + 1, len(links), prefix = 'Scraping:', suffix = 'Complete', length = 50)
         
+        #Get HTML for ingredients
         ingredients_html = soup.find_all("span", {"class": "ingredients-list-group__card__ingr"})
+        
+        #Extract the title
         title = soup.find("h1", {"class": "recipe-header__title"}).text.strip()
         
+        #Add the title to the ingredients list
         for ingredient in ingredients_html:
             ingredient = ingredient.text.strip()
             ingredient = get_ingredient(ingredient,nlp)
             ingredients_list.append(ingredient+"\n")
-        
+    
+    #Write the ingredients to a file
     with open("ingredients.txt", "w", encoding='utf-8') as f:
         f.writelines(ingredients_list)
 
+#Main flow of the program
 if __name__ == '__main__':
+    #Load the Swedish model
     nlp = spacy.load("sv_core_news_sm")
+    #Generate the ingredients
     generate_ingredients(nlp)
     
