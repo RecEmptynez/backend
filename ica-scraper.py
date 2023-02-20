@@ -72,8 +72,9 @@ def generate_ingredients(nlp):
             ingredients_list.append(ingredient+"\n")
     
     #Write the ingredients to a file
-    with open("ingredients.txt", "w", encoding='utf-8') as f:
+    with open("ingredients.json", "w", encoding='utf-8') as f:
         f.writelines(ingredients_list)
+
 
 #Main flow of the program
 if __name__ == '__main__':
