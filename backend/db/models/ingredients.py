@@ -4,6 +4,6 @@ from db.base_class import Base
 
 class Ingredient(Base):
     __tablename__ = "ingredients"
-    id = Column(Integer,primary_key = True, index=True)
+    id = Column(Integer,autoincrement=True,primary_key = True, index=True)
     title = Column(String,nullable= False)
-    category_id = Column(String,ForeignKey("categories.id"),nullable= False)
+    category_id = Column(Integer,ForeignKey("categories.id"),nullable= False)
