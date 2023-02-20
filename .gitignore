@@ -1,4 +1,5 @@
 __pycache__
 .env
 env
+.DS_Store
 test_db.db
