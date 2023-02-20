@@ -1,6 +1,7 @@
 from bs4 import BeautifulSoup
 import requests
 import spacy
+import json
 #******************************
 #Must run python -m spacy download sv_core_news_sm
 #******************************
@@ -45,14 +46,18 @@ def generate_ingredients(nlp):
     #Get the links to the recipes
     links = [base_url + card['href'] for card in cards]
     
-    #Initialize the ingredients list
-    ingredients_list = []
+    #Initialize the recipes list
+    recipes_list = []
     
     #Print the progress bar
     printProgressBar(0, len(links), prefix = 'Scraping:', suffix = 'Complete', length = 50)
     
     #Loop through the links and get the ingredients
     for i,link in enumerate(links):
+        
+        #Initialize the ingredients list
+        recipe_ingredients_list = []
+
         #Get the recipe page
         soup = BeautifulSoup(requests.get(link).text, "html.parser")
         
@@ -64,16 +69,29 @@ def generate_ingredients(nlp):
         
         #Extract the title
         title = soup.find("h1", {"class": "recipe-header__title"}).text.strip()
-        
+
         #Add the title to the ingredients list
         for ingredient in ingredients_html:
             ingredient = ingredient.text.strip()
             ingredient = get_ingredient(ingredient,nlp)
-            ingredients_list.append(ingredient+"\n")
+            recipe_ingredients_list.append(ingredient+"\n")
     
+        #Create json dictionary for this recipe
+        recipe_json = {
+            title: {
+                "ingredients": recipe_ingredients_list,
+                "url": link,
+            }
+        }
+
+        # Add the recipe to the list of recipes
+        recipes_list.append(recipe_json)
+
     #Write the ingredients to a file
-    with open("ingredients.txt", "w", encoding='utf-8') as f:
-        f.writelines(ingredients_list)
+    with open("ingredients.json", "w", encoding='utf-8') as f:
+        json.dump(recipes_list, f, indent=4)
+        
+        
 
 #Main flow of the program
 if __name__ == '__main__':
