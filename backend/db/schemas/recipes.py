@@ -15,8 +15,6 @@ class ShowRecipe(BaseModel):
 
 class MultRecipesCreate(BaseModel):
     recipes : List[RecipeCreate]
-    class Config():  #tells pydantic to convert even non dict obj to json
-        orm_mode = True
 
 
 class MultRecipesShow(BaseModel):

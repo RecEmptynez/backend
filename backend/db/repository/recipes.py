@@ -8,17 +8,11 @@ def create_new_recipe(recipe:RecipeCreate,db:Session):
         title=recipe.title
     )
     db.add(recipe)
-    db.commit()
+    db.commit() #commit gives the recipe an id
     db.refresh(recipe)
     return recipe
 
 def create_new_mult_recipes(recipes:MultRecipesCreate,db:Session):
-    for recipe in recipes.recipes:
-        recipe = Recipe(
-            title=recipe.title
-        )
-        db.add(recipe)
-        db.commit()
-        db.refresh(recipe)
-    return recipes.recipes
+    bulk_insert = [create_new_recipe(recipe=recipe,db=db) for recipe in recipes.recipes]
+    return bulk_insert
         
