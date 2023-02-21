@@ -22,3 +22,13 @@ class MultRecipesShow(BaseModel):
 
     class Config():  #tells pydantic to convert even non dict obj to json
         orm_mode = True
+
+class DeleteRecipe(BaseModel):
+    id : int
+
+class ShowDeletedRecipe(BaseModel):
+    title : str
+    id : int
+    
+    class Config():  #tells pydantic to convert even non dict obj to json
+        orm_mode = True
