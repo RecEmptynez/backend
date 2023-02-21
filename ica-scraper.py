@@ -93,7 +93,6 @@ def generate_ingredients(nlp):
         
         
 
-
 #Main flow of the program
 if __name__ == '__main__':
     #Load the Swedish model
