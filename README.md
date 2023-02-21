@@ -31,7 +31,7 @@ Use a CLI (Terminal for MacOS, CMD/PowerShell for Windows) and use the below com
 Either use GitHub desktop or use your terminal to clone the repo.
 
 ```console
-git clone https://github.com/bananarama-chalmers/bananarama.git
+git clone git@github.com:RecEmptynez/backend.git
 ```
 
 ## Commands
