@@ -11,26 +11,17 @@ Backend repo for our bachelors thesis.
 - Pavlos Stampoulis, [@PavlosStampoulis](https://github.com/PavlosStampoulis)
 - Felix La, [@Lafelix](https://github.com/Lafelix)
 
-## Navigating the repository
-
-### Reflections, coding guidelines, meeting protocols and social contract
-
-All documents are found in `./doc` and their respective subdirectory.
+### Coding guidelines
 
 - Coding guidelines - `./CONTRIBUTING.md`.
 
 ### Code and GitHub Actions
 
-- Project code is found in `./dev/app/src`.
-  - Backend/model - `./dev/app/src/model`
-  - Frontend - `./dev/app/src/components` & `./dev/app/src/pages`
 - GitHub Actions CI is found in `./github/workflows`.
 
 ## External resources
 
-- [Trello](https://trello.com/invite/b/gPkOTES8/adaa7303cfc620e6b2959125b9f5f90c/scrum-board).
-- [Google drive](https://drive.google.com/drive/folders/1-7u6WKM9A7ffXk8Di16uuG8JPrV1AxPL).
-- [Figma](https://www.figma.com/file/Bty1vRzHjiHqp5G75nxO4O/Untitled?node-id=0%3A1). Note: make sure to look at both pages (accessible from main menu).
+- [Jira](https://recemptynez.atlassian.net/jira/software/projects/REC/boards/1).
 
 ## Installation and running:
 Use a CLI (Terminal for MacOS, CMD/PowerShell for Windows) and use the below commands.
@@ -55,20 +46,43 @@ You'll need to use the following commands in the terminal:
 cd path/to/this/directory
 ```
 
-### Install frontend:
+### First time running:
 ```console
-cd dev/app
+cd path/to/backend
 ```
 ```console
-npm install
+python -m venv env
 ```
+windows:
+```console
+env/Scripts/activate 
+```
+Mac:??
+```console
+env/bin/activate 
+```
+When this is done you should see (env) in your terminal. If that is the case continue otherwise discord or google for help
+
+### Install required libraries: 
+```console
+pip install -r requirements.txt
+```
+### Create environment variables file
+create a file and name it ".env" in the outer backend directory.
+copy and paste the following code in the new file and fill in what is needed.
+
+POSTGRES_USER=your_user
+POSTGRES_PASSWORD=your_password
+POSTGRES_SERVER=localhost
+POSTGRES_PORT=5432
+POSTGRES_DB=name_of_your_db
 
 ### Run app:
 ```console
-cd dev/app
+cd backend
 ```
 ```console
-npm start
+uvicorn main:app --reload
 ```
 
 ### If it doesn't work
