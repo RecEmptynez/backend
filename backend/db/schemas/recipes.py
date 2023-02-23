@@ -31,6 +31,7 @@ class DeleteRecipe(BaseModel):
 class ShowDeletedRecipe(BaseModel):
     title : str
     id : int
+    url: str
     
     class Config():  #tells pydantic to convert even non dict obj to json
         orm_mode = True
