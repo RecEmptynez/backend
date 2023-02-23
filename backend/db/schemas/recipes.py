@@ -1,5 +1,5 @@
 from typing import Optional, List
-from pydantic import BaseModel,Extra
+from pydantic import BaseModel,EmailStr,Extra
 
 
 #properties required during user creation
@@ -25,3 +25,13 @@ class MultRecipesShow(BaseModel):
     class Config():  #tells pydantic to convert even non dict obj to json
         orm_mode = True
 
+class DeleteRecipe(BaseModel):
+    id : int
+
+class ShowDeletedRecipe(BaseModel):
+    title : str
+    id : int
+    url: str
+    
+    class Config():  #tells pydantic to convert even non dict obj to json
+        orm_mode = True
