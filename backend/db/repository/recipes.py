@@ -4,18 +4,16 @@ from db.schemas.recipes import RecipeCreate,MultRecipesCreate,DeleteRecipe,ShowD
 from db.models.recipes import Recipe
 from sqlalchemy import Delete
 
+#creates a new recipe and returns it
 def create_new_recipe(recipe:RecipeCreate,db:Session):
     recipe = Recipe(
-        title=recipe.title
+        title=recipe.title,
+        url=recipe.url
     )
     db.add(recipe)
     db.commit() #commit gives the recipe an id
     db.refresh(recipe)
     return recipe
-
-def create_new_mult_recipes(recipes:MultRecipesCreate,db:Session):
-    bulk_insert = [create_new_recipe(recipe=recipe,db=db) for recipe in recipes.recipes]
-    return bulk_insert
 
 def recipe_delete(recipe:DeleteRecipe,db:Session):
     delete_stmt = Delete(Recipe).where(Recipe.id == recipe.id).returning(Recipe)
@@ -25,4 +23,9 @@ def recipe_delete(recipe:DeleteRecipe,db:Session):
     db.commit()
     return ShowDeletedRecipe(id=id,title=title)
     
+#creates a list of new recipes and returns them
+def create_new_mult_recipes(recipes:MultRecipesCreate,db:Session):
+    bulk_insert = [create_new_recipe(recipe=recipe,db=db) for recipe in recipes.recipes]
+    return bulk_insert
+        
 

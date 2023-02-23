@@ -90,8 +90,7 @@ def generate_ingredients(nlp):
     #Write the ingredients to a file
     with open("ingredients.json", "w", encoding='utf-8') as f:
         json.dump(recipes_list, f, indent=4)
-        
-        
+
 
 #Main flow of the program
 if __name__ == '__main__':
