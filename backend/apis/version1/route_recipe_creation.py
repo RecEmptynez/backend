@@ -5,6 +5,7 @@ from typing import List
 from db.schemas.recipes import RecipeCreate,ShowRecipe,MultRecipesCreate,MultRecipesShow,DeleteRecipe,ShowDeletedRecipe
 from db.session import get_db
 from db.repository.recipes import create_new_recipe,create_new_mult_recipes,recipe_delete
+from db.repository.ingredients import create_new_ingredients
 
 router = APIRouter()
 
@@ -12,7 +13,8 @@ router = APIRouter()
 @router.post("/create_recipe",response_model=ShowRecipe)
 def create_recipe(recipe:RecipeCreate,db:Session = Depends(get_db)):
     recipe = create_new_recipe(recipe=recipe,db=db)
-    print(recipe.ingredients)
+    ingredients = create_new_ingredients(ingredient_titles=recipe.ingredients,db=db)
+    print(recipe.id, ingredients)
     return recipe
 
 #endpoint for creating multiple recipes
