@@ -12,6 +12,7 @@ router = APIRouter()
 @router.post("/create_recipe",response_model=ShowRecipe)
 def create_recipe(recipe:RecipeCreate,db:Session = Depends(get_db)):
     recipe = create_new_recipe(recipe=recipe,db=db)
+    print(recipe.ingredients)
     return recipe
 
 #endpoint for creating multiple recipes
