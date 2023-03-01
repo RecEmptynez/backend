@@ -78,10 +78,9 @@ def generate_ingredients(nlp):
     
         #Create json dictionary for this recipe
         recipe_json = {
-            title: {
-                "ingredients": recipe_ingredients_list,
-                "url": link,
-            }
+            "title": title,
+            "ingredients": recipe_ingredients_list,
+            "url": link,
         }
 
         # Add the recipe to the list of recipes
