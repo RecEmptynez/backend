@@ -7,4 +7,4 @@ class Category(Base):
     __tablename__ = "categories"
     id = Column(Integer,autoincrement=True,primary_key = True, index=True)
     title = Column(String,nullable= False)
-    ingredient_id = Column(Integer,ForeignKey("ingredients.id"),nullable=False)
+    #ingredient_id = Column(Integer,ForeignKey("ingredients.id"),nullable=False)

@@ -6,6 +6,7 @@ from db.schemas.recipes import RecipeCreate,ShowRecipe,MultRecipesCreate,MultRec
 from db.session import get_db
 from db.repository.recipes import create_new_recipe,create_new_mult_recipes,recipe_delete
 from db.repository.ingredients import create_new_ingredients
+from db.repository.recipe_ingredient import couple_recipe_ingredient
 
 router = APIRouter()
 
@@ -14,7 +15,8 @@ router = APIRouter()
 def create_recipe(recipe:RecipeCreate,db:Session = Depends(get_db)):
     recipe = create_new_recipe(recipe=recipe,db=db)
     ingredients = create_new_ingredients(ingredient_titles=recipe.ingredients,db=db)
-    print(recipe.id, ingredients)
+    test = couple_recipe_ingredient(recipe=recipe,importance=1,db=db)
+    print(recipe,ingredients)
     return recipe
 
 #endpoint for creating multiple recipes
