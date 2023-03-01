@@ -2,6 +2,8 @@ from bs4 import BeautifulSoup
 import requests
 import spacy
 import json
+from selenium import webdriver
+from selenium.webdriver.support.select import Select
 #******************************
 #Must run python -m spacy download sv_core_news_sm
 #******************************
@@ -34,6 +36,9 @@ def get_ingredient(ingredient,nlp):
     for token in doc:
         if token.dep_ == "ROOT":
             return token.text
+
+def show_more_recipes():
+    url = 0
 
 def generate_ingredients(nlp):
     
