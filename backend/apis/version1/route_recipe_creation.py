@@ -15,7 +15,6 @@ def create_recipe(recipe:RecipeCreate,db:Session = Depends(get_db)):
     recipe = create_new_recipe(recipe=recipe,db=db)
     ingredients = create_new_ingredients(ingredient_titles=recipe.ingredients,db=db)
     test = couple_recipe_ingredient(recipe=recipe,importance=1,db=db)
-    print(recipe,ingredients)
     return recipe
 
 #endpoint for creating multiple recipes
