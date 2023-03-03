@@ -14,7 +14,6 @@ from db.models.categories import Category
 def create_new_ingredients(ingredient_titles:List[str],db:Session):
     ingredients = []
     for ingredient_title in ingredient_titles:
-        print(ingredient_title)
         if ingredient_in_database(ingredient_title,db):
             select_stmt = Select(Ingredient).where(Ingredient.title == ingredient_title)
             result = db.execute(select_stmt).fetchall()
@@ -23,7 +22,6 @@ def create_new_ingredients(ingredient_titles:List[str],db:Session):
             insert_stmt = Insert(Ingredient).values(title=ingredient_title, category_id=1).returning(Ingredient.id,Ingredient.title,Ingredient.category_id)
             result = db.execute(insert_stmt).fetchall()
             db.commit()
-            print(ingredient_title)
             ingredients.append(result[0])
     
     return ingredients
