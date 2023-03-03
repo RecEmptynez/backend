@@ -4,6 +4,8 @@ import spacy
 import json
 from selenium import webdriver
 from selenium.webdriver.support.select import Select
+from selenium.webdriver.common.by import By
+from time import sleep
 #******************************
 #Must run python -m spacy download sv_core_news_sm
 #******************************
@@ -37,17 +39,30 @@ def get_ingredient(ingredient,nlp):
         if token.dep_ == "ROOT":
             return token.text
 
-def show_more_recipes():
-    url = 0
-
 def generate_ingredients(nlp):
     
     #Get the ica recipe page
     url = "https://www.ica.se/recept/?sort=rating"
     base_url = "https://www.ica.se"
     soup = BeautifulSoup(requests.get(url).text, "html.parser")
-    cards = soup.find_all("a", {"class": "recipe-card__content__title font-rubrik-2--mid"}, href=True)
+    xpath_cookie = "//button[contains(text(), 'Godkänn kakor')]"
+    #xpath_show_more_recipe = "//span[contains(text(), 'Visa fler recept')]"
+    xpath_show_more_recipe = "/html/body/div[1]/div/div[2]/div/div[8]/button"
+    #fixing several ------------------------------------
     
+    
+    driver = webdriver.Chrome(executable_path = r'./chromedriver')
+    #driver = webdriver.Firefox()
+    driver.get(url)
+    #driver.find_element_by_xpath("//button[contains(text(), 'Visa fler recept')]").click()
+    #sleep(2)
+    #driver.find_element(By.XPATH, xpath_cookie).click()
+    sleep(2)
+    driver.find_element(By.XPATH, xpath_show_more_recipe).click()
+    sleep(2)
+    
+    cards = soup.find_all("a", {"class": "recipe-card__content__title font-rubrik-2--mid"}, href=True)
+    # --------------------------------------------------------
     #Get the links to the recipes
     links = [base_url + card['href'] for card in cards]
     
