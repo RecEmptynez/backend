@@ -27,3 +27,20 @@ JavaScript error: https://assets.icanet.se/raw/upload/v1/mdsa-recept/assets/inde
 
 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 
+1677797726404	geckodriver	INFO	Listening on 127.0.0.1:49383
+1677797729466	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "49384" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Lucas\\AppData\\Local\\Temp\\rust_mozprofileSElGSG"
+1677797730538	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1677797730538	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1677797730539	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1677797733354	Marionette	INFO	Listening on port 49394
+1677797733677	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://assets.icanet.se/raw/upload/v1/mdsa-recept/assets/index.8e7ed555.js, line 1: SyntaxError: invalid regular expression flag s
+JavaScript error: https://assets.icanet.se/raw/upload/v1/mdsa-recept/assets/index.8e7ed555.js, line 1: SyntaxError: invalid regular expression flag s
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: /buckets/monitor/collections/changes/records?_expected=%221677793538744%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
+

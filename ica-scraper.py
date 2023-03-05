@@ -44,10 +44,11 @@ def generate_ingredients(nlp):
     #Get the ica recipe page
     url = "https://www.ica.se/recept/?sort=rating"
     base_url = "https://www.ica.se"
-    soup = BeautifulSoup(requests.get(url).text, "html.parser")
+    #soup = BeautifulSoup(requests.get(url).text, "html.parser")
     xpath_cookie = "//button[contains(text(), 'Godkänn kakor')]"
     #xpath_show_more_recipe = "//span[contains(text(), 'Visa fler recept')]"
-    xpath_show_more_recipe = "/html/body/div[1]/div/div[2]/div/div[8]/button"
+    #xpath_show_more_recipe = "/html/body/div[1]/div/div[2]/div/div[8]/button"
+    xpath_show_more_recipe = "/html/body/div/div/div[2]/div/div[8]/button/span[1]"
     #fixing several ------------------------------------
     
     
@@ -55,16 +56,32 @@ def generate_ingredients(nlp):
     #driver = webdriver.Firefox()
     driver.get(url)
     #driver.find_element_by_xpath("//button[contains(text(), 'Visa fler recept')]").click()
-    #sleep(2)
-    #driver.find_element(By.XPATH, xpath_cookie).click()
     sleep(2)
-    driver.find_element(By.XPATH, xpath_show_more_recipe).click()
+    try:
+        driver.find_element(By.XPATH, xpath_cookie).click()
+    except:
+        print("no cookie window")
     sleep(2)
-    
-    cards = soup.find_all("a", {"class": "recipe-card__content__title font-rubrik-2--mid"}, href=True)
+    for i in range(2):
+        sleep(1)
+        try:
+            driver.find_element(By.XPATH, xpath_show_more_recipe).click()
+        except:
+            print("doesnt woek")
+    sleep(2)
+    cards = driver.find_elements(By.CSS_SELECTOR, ".recipe-card__content__title.font-rubrik-2--mid")
+    #print(cards)
+    print(len(cards))
+
+    links = []
+    for link in cards:
+        links.append(link.get_attribute("href"))
+    print(len(links))
+
+    #cards = soup.find_all("a", {"class": "recipe-card__content__title font-rubrik-2--mid"}, href=True)
     # --------------------------------------------------------
     #Get the links to the recipes
-    links = [base_url + card['href'] for card in cards]
+    #links = [base_url + card['href'] for card in cards]
     
     #Initialize the recipes list
     recipes_list = []
