@@ -6,11 +6,13 @@ from pydantic import BaseModel,EmailStr,Extra
 class RecipeCreate(BaseModel):
     title : str
     url : str
+    ingredients: List[str]
 
 class ShowRecipe(BaseModel):
     title : str
     id : int
     url : str
+    ingredients: List[str]
 
     class Config():  #tells pydantic to convert even non dict obj to json
         orm_mode = True
