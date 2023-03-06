@@ -6,9 +6,6 @@ from sqlalchemy import Delete, Insert
 
 #creates a new recipe and returns it
 def create_new_recipe(recipe:RecipeCreate,db:Session):
-    insert_stmt = Insert(Category).values(title="test")
-    db.execute(insert_stmt)
-    db.commit()
     #Create the recipe:
     db_recipe = Recipe(title=recipe.title,url=recipe.url)    
     db.add(db_recipe)
