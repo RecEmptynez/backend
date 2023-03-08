@@ -8,6 +8,7 @@ from db.models.recipe_ingredient import Recipe_ingredient
 from sqlalchemy import Delete, Insert, Select, Join, distinct
 from db.schemas.search import SearchResult
 from db.repository.recipe_ingredient import get_ingredients_from_recipe
+import re
 
 # Vi vill returnera, matching i formen (antalmatchadeingredienser,antaltotalaingredienser), vilka ingredienser som matchar
 def search_recipe(search:Search,db:Session):
@@ -19,6 +20,7 @@ def search_recipe(search:Search,db:Session):
         for recipe in result:
             if len(recipe[0]) > 0:
                 recipes.append(recipe[0])
+    
     recipe_set = set(recipes) #remove duplicates
     recipe_list= list(recipe_set)
 
@@ -36,9 +38,11 @@ def get_match(user_ingredients, total_ingredients) -> tuple:
         match = 0
         recipe_ingredients = total_ingredients[recipe]
         for ingredient in user_ingredients:
-            if ingredient in recipe_ingredients:
-                match += 1
-        matches[recipe] = [match,len(recipe_ingredients),match/len(recipe_ingredients)]
+            for ing in recipe_ingredients:
+                if re.search(ingredient+'*', ing) and abs(len(ingredient)-len(ing)) < 3: #tomat ska matcha med tomater inte med tomatpuré
+                    match += 1
+        if match > 0:
+            matches[recipe] = [match,len(recipe_ingredients),match/len(recipe_ingredients)]
 
     return matches
 
