@@ -9,8 +9,10 @@ from sqlalchemy import Delete, Insert, Select, Join, distinct
 from db.schemas.search import SearchResult
 from db.repository.recipe_ingredient import get_ingredients_from_recipe
 
+# Vi vill returnera, matching i formen (antalmatchadeingredienser,antaltotalaingredienser), vilka ingredienser som matchar
 def search_recipe(search:Search,db:Session):
     recipes = []
+
     for ingredient in search.ingredient_names:
         stmt = Select(distinct(Recipe.title)).select_from(Recipe).join(Recipe_ingredient,Recipe.id == Recipe_ingredient.recipe_id).join(Ingredient,Ingredient.id == Recipe_ingredient.ingredient_id).where(Ingredient.title.like(f'%{ingredient}%'))
         result = db.execute(stmt).fetchall()
@@ -19,7 +21,27 @@ def search_recipe(search:Search,db:Session):
                 recipes.append(recipe[0])
     recipe_set = set(recipes) #remove duplicates
     recipe_list= list(recipe_set)
-    print(recipe_list)
+
+    user_ingredients = search.ingredient_names
     total_ingredients = get_ingredients_from_recipe(recipe_list,db)
 
-    return SearchResult(recipe_names = list(recipe_set))
+    matches = get_match(user_ingredients, total_ingredients)
+    sorted = sort_matches(matches)
+
+    return SearchResult(recipe_names = sorted)
+
+def get_match(user_ingredients, total_ingredients) -> tuple:
+    matches = {}
+    for recipe in total_ingredients:
+        match = 0
+        recipe_ingredients = total_ingredients[recipe]
+        for ingredient in user_ingredients:
+            if ingredient in recipe_ingredients:
+                match += 1
+        matches[recipe] = [match,len(recipe_ingredients),match/len(recipe_ingredients)]
+
+    return matches
+
+def sort_matches(matches:dict) -> list:
+    sorted_matches = sorted(matches.items(), key=lambda x: x[1][2], reverse=True)
+    return {k: v for k, v in sorted_matches}

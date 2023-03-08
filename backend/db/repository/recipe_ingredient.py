@@ -18,14 +18,21 @@ def couple_recipe_ingredient(recipe:ShowRecipe, importance:int, db:Session):
         db.refresh(db_recipe_ingredient)
     return db_recipe_ingredient
 
+# Gets all the ingredients from a recipe
 def get_ingredients_from_recipe(recipes,db:Session) -> dict:
     recipe_ingredients = {}
-    for recipe in recipes:
+    for recipe in recipes:   
         stmt = Select(Recipe.id).where(Recipe.title==recipe)
         recipeid = db.execute(stmt).fetchall()[0][0]
-        print(recipeid)
+        
         stmt = Select(Recipe_ingredient.ingredient_id).where(Recipe_ingredient.recipe_id==recipeid)
-        print(stmt)
         ingredient_ids = db.execute(stmt).fetchall()
-        print(ingredient_ids)
+        
+        stmt = Select(Recipe.title).where(Recipe.id==recipeid)
+        recipe_title = db.execute(stmt).fetchone()
+        
+        recipe_ingredients[recipe_title[0]]=[db.execute(Select(Ingredient.title).where(Ingredient.id==ingredient_id[0]))
+                                                .fetchone()[0].strip() 
+                                                    for ingredient_id in ingredient_ids]
+    
     return recipe_ingredients

@@ -9,10 +9,11 @@ from db.repository.ingredients import create_new_ingredients
 from db.repository.recipe_ingredient import couple_recipe_ingredient
 from db.repository.search import search_recipe
 from typing import List
+from db.schemas.search import SearchResult
 
 router = APIRouter()
 
-@router.post("/recipes")
+@router.post("/recipes",response_model=SearchResult)
 def search_recipes(search:Search, db:Session=Depends(get_db)):
     recipes = search_recipe(search,db)
-    return search
+    return recipes
