@@ -17,3 +17,15 @@ def couple_recipe_ingredient(recipe:ShowRecipe, importance:int, db:Session):
         db.commit()
         db.refresh(db_recipe_ingredient)
     return db_recipe_ingredient
+
+def get_ingredients_from_recipe(recipes,db:Session) -> dict:
+    recipe_ingredients = {}
+    for recipe in recipes:
+        stmt = Select(Recipe.id).where(Recipe.title==recipe)
+        recipeid = db.execute(stmt).fetchall()[0][0]
+        print(recipeid)
+        stmt = Select(Recipe_ingredient.ingredient_id).where(Recipe_ingredient.recipe_id==recipeid)
+        print(stmt)
+        ingredient_ids = db.execute(stmt).fetchall()
+        print(ingredient_ids)
+    return recipe_ingredients
