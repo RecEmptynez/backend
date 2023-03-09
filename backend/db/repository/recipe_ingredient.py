@@ -21,7 +21,8 @@ def couple_recipe_ingredient(recipe:ShowRecipe, importance:int, db:Session):
 # Gets all the ingredients from a recipe
 def get_ingredients_from_recipe(recipes,db:Session) -> dict:
     recipe_ingredients = {}
-    for recipe in recipes:   
+    for recipe in recipes:
+           
         stmt = Select(Recipe.id).where(Recipe.title==recipe)
         recipeid = db.execute(stmt).fetchall()[0][0]
         

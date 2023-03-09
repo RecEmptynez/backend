@@ -10,6 +10,7 @@ from db.schemas.search import SearchResult
 from db.repository.recipe_ingredient import get_ingredients_from_recipe
 import re
 
+# Search for recipes based on ingredients
 def search_recipe(search:Search,db:Session):
     recipes = []
 
@@ -30,7 +31,8 @@ def search_recipe(search:Search,db:Session):
     sorted = sort_matches(matches)
 
     return SearchResult(recipe_names = sorted)
-    
+
+#Get the matches between the user ingredients and the recipes
 def get_match(user_ingredients, total_ingredients) -> tuple:
     matches = {}
     for recipe in total_ingredients:
@@ -45,6 +47,7 @@ def get_match(user_ingredients, total_ingredients) -> tuple:
 
     return matches
 
+#Sort the matches and return them in an order ranging from best to worst match
 def sort_matches(matches:dict) -> list:
     sorted_matches = sorted(matches.items(), key=lambda x: x[1][2], reverse=True)
     return {k: v for k, v in sorted_matches}
