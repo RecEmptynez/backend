@@ -10,7 +10,6 @@ from db.schemas.search import SearchResult
 from db.repository.recipe_ingredient import get_ingredients_from_recipe
 import re
 
-# Vi vill returnera, matching i formen (antalmatchadeingredienser,antaltotalaingredienser), vilka ingredienser som matchar
 def search_recipe(search:Search,db:Session):
     recipes = []
 
@@ -31,7 +30,7 @@ def search_recipe(search:Search,db:Session):
     sorted = sort_matches(matches)
 
     return SearchResult(recipe_names = sorted)
-
+    
 def get_match(user_ingredients, total_ingredients) -> tuple:
     matches = {}
     for recipe in total_ingredients:
