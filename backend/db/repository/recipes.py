@@ -1,7 +1,8 @@
 from sqlalchemy.orm import Session
 from db.schemas.recipes import RecipeCreate,DeleteRecipe,ShowDeletedRecipe,ShowRecipe
 from db.models.recipes import Recipe
-from sqlalchemy import Delete
+from db.models.categories import Category
+from sqlalchemy import Delete, Insert
 
 #creates a new recipe and returns it
 def create_new_recipe(recipe:RecipeCreate,db:Session):
@@ -20,6 +21,7 @@ def recipe_delete(recipe:DeleteRecipe,db:Session):
     url = result.url
     db.commit()
     return ShowDeletedRecipe(id=id,title=title, url=url)
+
 
         
 
