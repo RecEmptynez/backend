@@ -6,6 +6,7 @@ from selenium import webdriver
 from selenium.webdriver.support.select import Select
 from selenium.webdriver.common.by import By
 from time import sleep
+import re
 #******************************
 #Must run python -m spacy download sv_core_news_sm
 #******************************
@@ -47,7 +48,7 @@ def generate_ingredients(nlp):
 
     #number of epochs we want to run the script, 1 generates about 10 recipes, to high runtime could cause crashes
     # 500 took about 40 minutes to run the whole script
-    runtime = 500
+    runtime = 10
 
     #paths to the elements we want to click
     xpath_cookie = "//button[contains(text(), 'Godkänn kakor')]"
@@ -69,7 +70,7 @@ def generate_ingredients(nlp):
     sleep(2)
 
     #clicks down the button at the bottom of the page allowing more recipes
-    for i in range(500):
+    for i in range(runtime):
         sleep(1)
         try:
             driver.find_element(By.XPATH, xpath_show_more_recipe).click()
@@ -86,7 +87,7 @@ def generate_ingredients(nlp):
     for link in cards:
         links.append(link.get_attribute("href"))
     print("completed gathering links")
-    print("number of links gathered: "+len(links))
+    print("number of links gathered: ",len(links))
     #Initialize the recipes list
     recipes_list = []
     
@@ -113,9 +114,12 @@ def generate_ingredients(nlp):
 
         #Add the title to the ingredients list
         for ingredient in ingredients_html:
+            weight = 1
             ingredient = ingredient.text.strip()
             ingredient = get_ingredient(ingredient,nlp)
-            recipe_ingredients_list.append(ingredient+"\n")
+            if ingredient in title.split():
+                weight = 2
+            recipe_ingredients_list.append([ingredient,weight])
     
         #Create json dictionary for this recipe
         recipe_json = {
