@@ -15,7 +15,6 @@ from db.repository.recipe_ingredient import get_ingredients_from_recipe
 def search_ingredient(search_ingredient:SearchIngredient , db:Session):
     search_str = search_ingredient.ingredient_string
     print(search_str)
-    #stmt = ingredients.select().where(ingredients.c.title.like('röd%'))
     stmt = Select(Ingredient.title).where(Ingredient.title.like(f'{search_str}%'))
     print(stmt)
     results = db.execute(stmt).fetchall()
@@ -24,4 +23,4 @@ def search_ingredient(search_ingredient:SearchIngredient , db:Session):
         returns.append(result[0])
         print(result[0]) 
     print(returns)
-    return result
+    return returns

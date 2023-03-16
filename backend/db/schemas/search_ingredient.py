@@ -6,6 +6,6 @@ class SearchIngredient(BaseModel):
 
 
 class SearchIngredientResult(BaseModel):
-    ingredient: list[str]
+    ingredient: List[str]
     class Config():
         orm_mode = True
