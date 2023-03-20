@@ -47,7 +47,7 @@ def generate_ingredients(nlp):
 
     #number of epochs we want to run the script, 1 generates about 10 recipes, to high runtime could cause crashes
     # 500 took about 40 minutes to run the whole script
-    runtime = 500
+    runtime = 5
 
     #paths to the elements we want to click
     xpath_cookie = "//button[contains(text(), 'Godkänn kakor')]"
@@ -69,7 +69,7 @@ def generate_ingredients(nlp):
     sleep(2)
 
     #clicks down the button at the bottom of the page allowing more recipes
-    for i in range(500):
+    for i in range(runtime):
         sleep(1)
         try:
             driver.find_element(By.XPATH, xpath_show_more_recipe).click()
@@ -86,7 +86,7 @@ def generate_ingredients(nlp):
     for link in cards:
         links.append(link.get_attribute("href"))
     print("completed gathering links")
-    print("number of links gathered: "+len(links))
+    print("number of links gathered: "+str(len(links)))
     #Initialize the recipes list
     recipes_list = []
     

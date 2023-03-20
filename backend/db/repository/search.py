@@ -11,7 +11,6 @@ from db.repository.recipe_ingredient import get_num_ingredients
 import re
 from sqlalchemy import func
 
-# Search for recipes based on ingredients, TODO implement getting only recipes with every recipe up to a quota, if not remove one ingredient and so on
 def search_recipe(search:Search,db:Session):
     limit = 100
     # create the dynamic WHERE clause
