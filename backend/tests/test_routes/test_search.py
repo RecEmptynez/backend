@@ -27,4 +27,4 @@ def test_search(client):
 
     response = client.post("/search/recipes", data=search)
     assert response.status_code == 200
-    assert response.json() == "[]"
+    assert response.json()["recipe_names"][title1] == [3,3]
