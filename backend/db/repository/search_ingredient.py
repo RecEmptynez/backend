@@ -8,7 +8,6 @@ from db.models.ingredients import Ingredient
 from db.models.recipe_ingredient import Recipe_ingredient
 from sqlalchemy import Delete, Insert, Select, Join, distinct
 from db.schemas.search import SearchResult
-from db.repository.recipe_ingredient import get_ingredients_from_recipe
 #from models.ingredients import Ingredient
 
 
