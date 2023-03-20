@@ -48,7 +48,7 @@ def generate_ingredients(nlp):
 
     #number of epochs we want to run the script, 1 generates about 10 recipes, to high runtime could cause crashes
     # 500 took about 40 minutes to run the whole script
-    runtime = 10
+    runtime = 2
 
     #paths to the elements we want to click
     xpath_cookie = "//button[contains(text(), 'Godkänn kakor')]"
@@ -97,8 +97,8 @@ def generate_ingredients(nlp):
     #Loop through the links and get the ingredients
     for i,link in enumerate(links):
         
-        #Initialize the ingredients list
-        recipe_ingredients_list = []
+        #Initialize the ingredients set
+        recipe_ingredients_set = []
 
         #Get the recipe page
         soup = BeautifulSoup(requests.get(link).text, "html.parser")
@@ -112,19 +112,17 @@ def generate_ingredients(nlp):
         #Extract the title
         title = soup.find("h1", {"class": "recipe-header__title"}).text.strip()
 
-        #Add the title to the ingredients list
+        #Add the title to the ingredients set
         for ingredient in ingredients_html:
-            weight = 1
             ingredient = ingredient.text.strip()
             ingredient = get_ingredient(ingredient,nlp)
-            if ingredient in title.split():
-                weight = 2
-            recipe_ingredients_list.append([ingredient,weight])
+            weight = increase_weight(ingredient,title)
+            recipe_ingredients_set.append([ingredient,weight])
     
         #Create json dictionary for this recipe
         recipe_json = {
             "title": title,
-            "ingredients": recipe_ingredients_list,
+            "ingredients": recipe_ingredients_set,
             "url": link,
         }
 
@@ -135,6 +133,31 @@ def generate_ingredients(nlp):
     with open("ingredients.json", "w", encoding='utf-8') as f:
         json.dump(recipes_list, f, indent=4)
 
+
+def increase_weight(ingredient,title):
+    '''for word in title.split():
+        if re.search(word.strip().lower()+'*',ingredient) != None:
+            return 2
+        if len(ingredient[0:-2]) > 3:
+            if re.search(word.strip().lower()+'*',ingredient[0:-2]) != None:
+                return 2
+        if len(ingredient[0:-6]) > 4:
+            if re.search(word.strip().lower()+'*',ingredient[0:-6]) != None:
+                return 2
+        if re.search(ingredient,title) != None:
+            return 2'''
+    if ingredient == '+':
+        return 1
+    if re.search(ingredient,title) != None:
+        return 2
+    if re.search(ingredient[0:-2],title) != None and len(ingredient[0:-2]) > 3:
+        return 2
+    
+    for word in title.split():
+        if re.search(word.strip().lower(),ingredient) != None:
+            return 2
+        
+    return 1
 
 #Main flow of the program
 if __name__ == '__main__':

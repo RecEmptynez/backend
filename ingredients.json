@@ -4,7 +4,7 @@
         "ingredients": [
             [
                 "vegof\u00e4rs",
-                1
+                2
             ],
             [
                 "r\u00f6dl\u00f6k",
@@ -36,7 +36,7 @@
             ],
             [
                 "tacos\u00e5s",
-                1
+                2
             ],
             [
                 "gr\u00e4ddfil",
@@ -54,7 +54,7 @@
         "ingredients": [
             [
                 "kycklingfil\u00e9er",
-                1
+                2
             ],
             [
                 "olivolja",
@@ -120,7 +120,7 @@
         "ingredients": [
             [
                 "sm\u00f6r",
-                1
+                2
             ],
             [
                 "\u00f6rter",
@@ -164,7 +164,7 @@
             ],
             [
                 "senap",
-                1
+                2
             ],
             [
                 "honung",
@@ -210,7 +210,7 @@
         "ingredients": [
             [
                 "laxfil\u00e9",
-                1
+                2
             ],
             [
                 "sesamfr\u00f6n",
@@ -218,7 +218,7 @@
             ],
             [
                 "broccoli",
-                1
+                2
             ],
             [
                 "lime",
@@ -274,11 +274,11 @@
             ],
             [
                 "limejuice",
-                1
+                2
             ],
             [
                 "limeblad",
-                1
+                2
             ]
         ],
         "url": "https://www.ica.se/recept/lax-asian-style-med-broccoli-lime-och-cashewnotter-715438/"
@@ -288,19 +288,19 @@
         "ingredients": [
             [
                 "skinn",
-                1
+                2
             ],
             [
                 "\u00e4ggvita",
-                1
+                2
             ],
             [
                 "finriven",
-                1
+                2
             ],
             [
                 "vitl\u00f6ksklyftor",
-                1
+                2
             ],
             [
                 "salt",
@@ -316,23 +316,23 @@
             ],
             [
                 "chilis\u00e5s",
-                1
+                2
             ],
             [
                 "fisks\u00e5s",
-                1
+                2
             ],
             [
                 "finriven",
-                1
+                2
             ],
             [
                 "vitl\u00f6ksklyfta",
-                1
+                2
             ],
             [
                 "lime",
-                1
+                2
             ],
             [
                 "hj\u00e4rtsallad",
@@ -358,7 +358,7 @@
             ],
             [
                 "saffran",
-                1
+                2
             ],
             [
                 "havredryck",
@@ -390,7 +390,7 @@
             ],
             [
                 "vaniljsocker",
-                1
+                2
             ],
             [
                 "havredryck",
@@ -412,7 +412,7 @@
             ],
             [
                 "jord\u00e4rtskockor",
-                1
+                2
             ],
             [
                 "flingsalt",
@@ -594,7 +594,7 @@
             ],
             [
                 "laxfil\u00e9",
-                1
+                2
             ],
             [
                 "dill",
@@ -616,7 +616,7 @@
         "ingredients": [
             [
                 "kycklingben",
-                1
+                2
             ],
             [
                 "salt",
@@ -640,7 +640,7 @@
             ],
             [
                 "curry",
-                1
+                2
             ],
             [
                 "broccoli",
@@ -700,7 +700,7 @@
             ],
             [
                 "chilipeppar",
-                1
+                2
             ],
             [
                 "r\u00f6dl\u00f6k",
@@ -780,7 +780,7 @@
         "ingredients": [
             [
                 "mungb\u00f6nor",
-                1
+                2
             ],
             [
                 "vatten",
@@ -896,6 +896,44 @@
         "url": "https://www.ica.se/recept/glutenfri-vegolasagne-med-folke-722886/"
     },
     {
+        "title": "Banoffee paj",
+        "ingredients": [
+            [
+                "sm\u00f6r",
+                1
+            ],
+            [
+                "str\u00f6socker",
+                1
+            ],
+            [
+                "digestivekex",
+                1
+            ],
+            [
+                "dulce",
+                1
+            ],
+            [
+                "flingsalt",
+                1
+            ],
+            [
+                "bananer",
+                1
+            ],
+            [
+                "vispgr\u00e4dde",
+                1
+            ],
+            [
+                "choklad",
+                1
+            ]
+        ],
+        "url": "https://www.ica.se/recept/banoffee-paj-728562/"
+    },
+    {
         "title": "M\u00f6rkt b\u00f6nbr\u00f6d med frukt och n\u00f6tter",
         "ingredients": [
             [
@@ -950,49 +988,11 @@
         "url": "https://www.ica.se/recept/morkt-bonbrod-med-frukt-och-notter-725219/"
     },
     {
-        "title": "Banoffee paj",
-        "ingredients": [
-            [
-                "sm\u00f6r",
-                1
-            ],
-            [
-                "str\u00f6socker",
-                1
-            ],
-            [
-                "digestivekex",
-                1
-            ],
-            [
-                "dulce",
-                1
-            ],
-            [
-                "flingsalt",
-                1
-            ],
-            [
-                "bananer",
-                1
-            ],
-            [
-                "vispgr\u00e4dde",
-                1
-            ],
-            [
-                "choklad",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/banoffee-paj-728562/"
-    },
-    {
         "title": "Kycklingspett med rostad s\u00f6tpotatissallad och chilimajonn\u00e4s",
         "ingredients": [
             [
                 "s\u00f6tpotatis",
-                1
+                2
             ],
             [
                 "r\u00f6dl\u00f6k",
@@ -1040,7 +1040,7 @@
             ],
             [
                 "majonn\u00e4s",
-                1
+                2
             ],
             [
                 "srirachas\u00e5s",
@@ -1048,7 +1048,7 @@
             ],
             [
                 "kycklingspett",
-                1
+                2
             ],
             [
                 "libabr\u00f6d",
@@ -1078,7 +1078,7 @@
             ],
             [
                 "tomater",
-                1
+                2
             ],
             [
                 "riven",
@@ -1090,7 +1090,7 @@
             ],
             [
                 "tomatpur\u00e9",
-                1
+                2
             ],
             [
                 "masala",
@@ -1098,7 +1098,7 @@
             ],
             [
                 "tomater",
-                1
+                2
             ],
             [
                 "vatten",
@@ -1178,7 +1178,7 @@
         "ingredients": [
             [
                 "tomater",
-                1
+                2
             ],
             [
                 "olja",
@@ -1210,7 +1210,7 @@
             ],
             [
                 "tomater",
-                1
+                2
             ],
             [
                 "basilika",
@@ -1238,7 +1238,7 @@
             ],
             [
                 "halloumi",
-                1
+                2
             ],
             [
                 "olja",
@@ -1260,7 +1260,7 @@
             ],
             [
                 "fetaost",
-                1
+                2
             ],
             [
                 "hackad",
@@ -1330,7 +1330,7 @@
             ],
             [
                 "fl\u00e4skf\u00e4rs",
-                1
+                2
             ],
             [
                 "soja",
@@ -1366,7 +1366,7 @@
             ],
             [
                 "risnudlar",
-                1
+                2
             ],
             [
                 "isbergssalladshuvud",
@@ -1582,60 +1582,6 @@
         "url": "https://www.ica.se/recept/lins-och-bonchili-723196/"
     },
     {
-        "title": "Saffranskladdkaka med mandelmassa",
-        "ingredients": [
-            [
-                "matfett",
-                1
-            ],
-            [
-                "str\u00f6br\u00f6d",
-                1
-            ],
-            [
-                "str\u00f6socker",
-                1
-            ],
-            [
-                "vetemj\u00f6l",
-                1
-            ],
-            [
-                "vaniljsocker",
-                1
-            ],
-            [
-                "salt",
-                1
-            ],
-            [
-                "\u00e4gg",
-                1
-            ],
-            [
-                "mandelmassa",
-                2
-            ],
-            [
-                "margarin",
-                1
-            ],
-            [
-                "saffran",
-                1
-            ],
-            [
-                "b\u00e4r",
-                1
-            ],
-            [
-                "matlagningsgr\u00e4dde",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/saffranskladdkaka-med-mandelmassa-726334/"
-    },
-    {
         "title": "Boeuf bourguignon med potatismos",
         "ingredients": [
             [
@@ -1704,7 +1650,7 @@
             ],
             [
                 "potatis",
-                1
+                2
             ],
             [
                 "vitl\u00f6ksklyfta",
@@ -1742,50 +1688,26 @@
         "url": "https://www.ica.se/recept/boeuf-bourguignon-med-potatismos-726038/"
     },
     {
-        "title": "Kreolsk gryta",
+        "title": "Saffranskladdkaka med mandelmassa",
         "ingredients": [
             [
-                "fl\u00e4skfil\u00e9",
+                "matfett",
                 1
             ],
             [
-                "sm\u00f6r",
+                "str\u00f6br\u00f6d",
                 1
             ],
             [
-                "kabanoss",
+                "str\u00f6socker",
                 1
             ],
             [
-                "paprikor",
+                "vetemj\u00f6l",
                 1
             ],
             [
-                "vitl\u00f6ksklyfta",
-                1
-            ],
-            [
-                "vispgr\u00e4dde",
-                1
-            ],
-            [
-                "k\u00f6ttbuljong",
-                1
-            ],
-            [
-                "cornichons",
-                1
-            ],
-            [
-                "urk\u00e4rnade",
-                1
-            ],
-            [
-                "syltl\u00f6k",
-                1
-            ],
-            [
-                "majsst\u00e4rkelse",
+                "vaniljsocker",
                 1
             ],
             [
@@ -1793,23 +1715,31 @@
                 1
             ],
             [
-                "peppar",
+                "\u00e4gg",
                 1
             ],
             [
-                "persilja",
+                "mandelmassa",
+                2
+            ],
+            [
+                "margarin",
                 1
             ],
             [
-                "ris",
+                "saffran",
                 1
             ],
             [
-                "sallad",
+                "b\u00e4r",
+                1
+            ],
+            [
+                "matlagningsgr\u00e4dde",
                 1
             ]
         ],
-        "url": "https://www.ica.se/recept/kreolsk-gryta-724259/"
+        "url": "https://www.ica.se/recept/saffranskladdkaka-med-mandelmassa-726334/"
     },
     {
         "title": "Tacos med friterad halloumi och gr\u00f6n salsa",
@@ -1886,34 +1816,50 @@
         "url": "https://www.ica.se/recept/tacos-med-friterad-halloumi-och-gron-salsa-727747/"
     },
     {
-        "title": "Torskrygg i ugn med r\u00e4kor och dillsm\u00f6r",
+        "title": "Kreolsk gryta",
         "ingredients": [
             [
-                "torskrygg",
+                "fl\u00e4skfil\u00e9",
                 1
             ],
             [
-                "salt",
+                "sm\u00f6r",
                 1
             ],
             [
-                "socker",
+                "kabanoss",
                 1
             ],
             [
-                "vatten",
+                "paprikor",
                 1
             ],
             [
-                "mandelpotatis",
+                "vitl\u00f6ksklyfta",
                 1
             ],
             [
-                "smetana",
+                "vispgr\u00e4dde",
                 1
             ],
             [
-                "citron",
+                "k\u00f6ttbuljong",
+                1
+            ],
+            [
+                "cornichons",
+                1
+            ],
+            [
+                "urk\u00e4rnade",
+                1
+            ],
+            [
+                "syltl\u00f6k",
+                1
+            ],
+            [
+                "majsst\u00e4rkelse",
                 1
             ],
             [
@@ -1925,31 +1871,19 @@
                 1
             ],
             [
-                "r\u00e4kor",
-                2
-            ],
-            [
-                "purjol\u00f6k",
+                "persilja",
                 1
             ],
             [
-                "dill",
+                "ris",
                 1
             ],
             [
-                "sm\u00f6r",
-                1
-            ],
-            [
-                "citronsaft",
-                1
-            ],
-            [
-                "krasse",
+                "sallad",
                 1
             ]
         ],
-        "url": "https://www.ica.se/recept/torskrygg-i-ugn-med-rakor-och-dillsmor-724417/"
+        "url": "https://www.ica.se/recept/kreolsk-gryta-724259/"
     },
     {
         "title": "Kr\u00e4mig tomatpasta med citron och burrata",
@@ -1976,7 +1910,7 @@
             ],
             [
                 "citronskal",
-                1
+                2
             ],
             [
                 "socker",
@@ -2004,6 +1938,72 @@
             ]
         ],
         "url": "https://www.ica.se/recept/kramig-tomatpasta-med-citron-och-burrata-728249/"
+    },
+    {
+        "title": "Torskrygg i ugn med r\u00e4kor och dillsm\u00f6r",
+        "ingredients": [
+            [
+                "torskrygg",
+                2
+            ],
+            [
+                "salt",
+                1
+            ],
+            [
+                "socker",
+                1
+            ],
+            [
+                "vatten",
+                1
+            ],
+            [
+                "mandelpotatis",
+                2
+            ],
+            [
+                "smetana",
+                1
+            ],
+            [
+                "citron",
+                2
+            ],
+            [
+                "salt",
+                1
+            ],
+            [
+                "peppar",
+                1
+            ],
+            [
+                "r\u00e4kor",
+                2
+            ],
+            [
+                "purjol\u00f6k",
+                1
+            ],
+            [
+                "dill",
+                2
+            ],
+            [
+                "sm\u00f6r",
+                2
+            ],
+            [
+                "citronsaft",
+                2
+            ],
+            [
+                "krasse",
+                1
+            ]
+        ],
+        "url": "https://www.ica.se/recept/torskrygg-i-ugn-med-rakor-och-dillsmor-724417/"
     },
     {
         "title": "Heta f\u00e4rsbullar med ingef\u00e4ra och koriander",
@@ -2084,11 +2084,11 @@
         "ingredients": [
             [
                 "majonn\u00e4s",
-                1
+                2
             ],
             [
                 "koriander",
-                1
+                2
             ],
             [
                 "jalape\u00f1os",
@@ -2260,7 +2260,7 @@
             ],
             [
                 "citronsaft",
-                1
+                2
             ],
             [
                 "salt",
@@ -2366,11 +2366,11 @@
             ],
             [
                 "vallmofr\u00f6n",
-                1
+                2
             ],
             [
                 "pumpafr\u00f6n",
-                1
+                2
             ],
             [
                 "salt",
@@ -2384,7 +2384,7 @@
         "ingredients": [
             [
                 "bl\u00e5b\u00e4r",
-                1
+                2
             ],
             [
                 "potatismj\u00f6l",
@@ -2508,7 +2508,7 @@
             ],
             [
                 "sm\u00f6r",
-                1
+                2
             ],
             [
                 "citronskal",
@@ -2524,7 +2524,7 @@
             ],
             [
                 "r\u00f6dl\u00f6k",
-                1
+                2
             ],
             [
                 "citronjuice",
@@ -2546,7 +2546,7 @@
         "ingredients": [
             [
                 "jord\u00e4rtskocka",
-                1
+                2
             ],
             [
                 "potatis",
@@ -2612,7 +2612,7 @@
         "ingredients": [
             [
                 "julmust",
-                1
+                2
             ],
             [
                 "enb\u00e4r",
@@ -2648,7 +2648,7 @@
             ],
             [
                 "revbensspj\u00e4ll",
-                1
+                2
             ],
             [
                 "salt",
@@ -2660,4425 +2660,5 @@
             ]
         ],
         "url": "https://www.ica.se/recept/revbensspjall-med-julmustglaze-726191/"
-    },
-    {
-        "title": "Krispiga snittar med friterat rispapper, avokado och rom",
-        "ingredients": [
-            [
-                "olja",
-                1
-            ],
-            [
-                "rispapper",
-                1
-            ],
-            [
-                "salt",
-                1
-            ],
-            [
-                "spenatblad",
-                1
-            ],
-            [
-                "avokador",
-                1
-            ],
-            [
-                "limejuice",
-                1
-            ],
-            [
-                "forell-",
-                1
-            ],
-            [
-                "sesamfr\u00f6n",
-                1
-            ],
-            [
-                "gr\u00e4sl\u00f6k",
-                1
-            ],
-            [
-                "fraiche",
-                1
-            ],
-            [
-                "limeskal",
-                1
-            ],
-            [
-                "limejuice",
-                1
-            ],
-            [
-                "salt",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/krispiga-snittar-med-friterat-rispapper-avokado-och-rom-724935/"
-    },
-    {
-        "title": "Kryddig ostsallad",
-        "ingredients": [
-            [
-                "bacon",
-                1
-            ],
-            [
-                "kryddost",
-                1
-            ],
-            [
-                "\u00e4pplen",
-                1
-            ],
-            [
-                "r\u00f6dl\u00f6k",
-                1
-            ],
-            [
-                "rapsolja",
-                1
-            ],
-            [
-                "dijonsenap",
-                1
-            ],
-            [
-                "honung",
-                1
-            ],
-            [
-                "senapsfr\u00f6n",
-                1
-            ],
-            [
-                "rosmarin",
-                1
-            ],
-            [
-                "salt",
-                1
-            ],
-            [
-                "rucola",
-                1
-            ],
-            [
-                "hasseln\u00f6tter",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/kryddig-ostsallad-721297/"
-    },
-    {
-        "title": "Bakad rotselleri med brynt salviasm\u00f6r och hasseln\u00f6tter",
-        "ingredients": [
-            [
-                "rotselleri",
-                2
-            ],
-            [
-                "rapsolja",
-                1
-            ],
-            [
-                "salt",
-                1
-            ],
-            [
-                "sm\u00f6r",
-                1
-            ],
-            [
-                "salvia",
-                1
-            ],
-            [
-                "hasseln\u00f6tter",
-                2
-            ],
-            [
-                "rucola",
-                1
-            ],
-            [
-                "svartpeppar",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/bakad-rotselleri-med-brynt-salviasmor-och-hasselnotter-724696/"
-    },
-    {
-        "title": "Palak paneer med halloumi",
-        "ingredients": [
-            [
-                "ris",
-                1
-            ],
-            [
-                "l\u00f6k",
-                1
-            ],
-            [
-                "vitl\u00f6ksklyftor",
-                1
-            ],
-            [
-                "riven",
-                1
-            ],
-            [
-                "olja",
-                1
-            ],
-            [
-                "tomatpur\u00e9",
-                1
-            ],
-            [
-                "masala",
-                1
-            ],
-            [
-                "tomater",
-                1
-            ],
-            [
-                "mellangr\u00e4dde",
-                1
-            ],
-            [
-                "gr\u00f6nsaksbuljongt\u00e4rning",
-                1
-            ],
-            [
-                "spenat",
-                1
-            ],
-            [
-                "k\u00f6rsb\u00e4rstomater",
-                1
-            ],
-            [
-                "halloumi",
-                2
-            ],
-            [
-                "salt",
-                1
-            ],
-            [
-                "peppar",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/palak-paneer-med-halloumi-726167/"
-    },
-    {
-        "title": "P\u00e5skt\u00e5rta med hallon",
-        "ingredients": [
-            [
-                "sm\u00f6r",
-                1
-            ],
-            [
-                "str\u00f6br\u00f6d",
-                1
-            ],
-            [
-                "vetemj\u00f6l",
-                1
-            ],
-            [
-                "str\u00f6socker",
-                1
-            ],
-            [
-                "kakao",
-                1
-            ],
-            [
-                "bikarbonat",
-                1
-            ],
-            [
-                "bakpulver",
-                1
-            ],
-            [
-                "vaniljsocker",
-                1
-            ],
-            [
-                "salt",
-                1
-            ],
-            [
-                "\u00e4gg",
-                1
-            ],
-            [
-                "mj\u00f6lk",
-                1
-            ],
-            [
-                "matolja",
-                1
-            ],
-            [
-                "vatten",
-                1
-            ],
-            [
-                "bakchoklad",
-                1
-            ],
-            [
-                "sm\u00f6r",
-                1
-            ],
-            [
-                "florsocker",
-                1
-            ],
-            [
-                "vaniljsocker",
-                1
-            ],
-            [
-                "hallon",
-                2
-            ],
-            [
-                "choklad",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/pasktarta-med-hallon-728979/"
-    },
-    {
-        "title": "Krossad f\u00e4rskpotatis med V\u00e4sterbottensost",
-        "ingredients": [
-            [
-                "f\u00e4rskpotatis",
-                2
-            ],
-            [
-                "dillstj\u00e4lkar",
-                1
-            ],
-            [
-                "sm\u00f6r",
-                1
-            ],
-            [
-                "V\u00e4sterbottensost",
-                2
-            ],
-            [
-                "schalottenl\u00f6k",
-                1
-            ],
-            [
-                "gr\u00e4sl\u00f6k",
-                1
-            ],
-            [
-                "flingsalt",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/krossad-farskpotatis-med-vasterbottensost-724034/"
-    },
-    {
-        "title": "Hel kyckling med rosmarin- och citronsm\u00f6r",
-        "ingredients": [
-            [
-                "sardeller",
-                1
-            ],
-            [
-                "vitl\u00f6ksklyftor",
-                1
-            ],
-            [
-                "citron",
-                1
-            ],
-            [
-                "rosmarin",
-                1
-            ],
-            [
-                "sm\u00f6r",
-                1
-            ],
-            [
-                "salt",
-                1
-            ],
-            [
-                "svartpeppar",
-                1
-            ],
-            [
-                "kyckling",
-                2
-            ],
-            [
-                "flingsalt",
-                1
-            ],
-            [
-                "svartpeppar",
-                1
-            ],
-            [
-                "l\u00f6kar",
-                1
-            ],
-            [
-                "kvistar",
-                1
-            ],
-            [
-                "potatis",
-                1
-            ],
-            [
-                "gr\u00f6nsallad",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/hel-kyckling-med-rosmarin-och-citronsmor-724787/"
-    },
-    {
-        "title": "Ch\u00e8vrepizza med gr\u00f6nk\u00e5l",
-        "ingredients": [
-            [
-                "f\u00f6rp",
-                1
-            ],
-            [
-                "fraiche",
-                1
-            ],
-            [
-                "hackad",
-                1
-            ],
-            [
-                "olivolja",
-                1
-            ],
-            [
-                "salt",
-                1
-            ],
-            [
-                "ch\u00e8vre",
-                1
-            ],
-            [
-                "tranb\u00e4r",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/chevrepizza-med-gronkal-722871/"
-    },
-    {
-        "title": "Linscurry med pumpa, kokos och lime",
-        "ingredients": [
-            [
-                "linser",
-                1
-            ],
-            [
-                "butternutpumpa",
-                1
-            ],
-            [
-                "olivolja",
-                1
-            ],
-            [
-                "salt",
-                1
-            ],
-            [
-                "schalottenl\u00f6kar",
-                1
-            ],
-            [
-                "vitl\u00f6ksklyftor",
-                1
-            ],
-            [
-                "paprika",
-                1
-            ],
-            [
-                "chilifrukter",
-                1
-            ],
-            [
-                "tomater",
-                1
-            ],
-            [
-                "spiskummin",
-                1
-            ],
-            [
-                "gurkmeja",
-                1
-            ],
-            [
-                "kanel",
-                1
-            ],
-            [
-                "paprikapulver",
-                1
-            ],
-            [
-                "koriander",
-                1
-            ],
-            [
-                "kokosmj\u00f6lk",
-                1
-            ],
-            [
-                "tahini",
-                1
-            ],
-            [
-                "honung",
-                1
-            ],
-            [
-                "limejuice",
-                1
-            ],
-            [
-                "soja",
-                1
-            ],
-            [
-                "svartpeppar",
-                1
-            ],
-            [
-                "yoghurt",
-                1
-            ],
-            [
-                "honung",
-                1
-            ],
-            [
-                "olivolja",
-                1
-            ],
-            [
-                "salt",
-                1
-            ],
-            [
-                "gurka",
-                1
-            ],
-            [
-                "risvin\u00e4ger",
-                1
-            ],
-            [
-                "koriander",
-                1
-            ],
-            [
-                "fullkornsris",
-                1
-            ],
-            [
-                "srirachas\u00e5s",
-                1
-            ],
-            [
-                "limeklyftor",
-                1
-            ],
-            [
-                "inlagd",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/linscurry-med-pumpa-kokos-och-lime-722760/"
-    },
-    {
-        "title": "Kladdkakecookies",
-        "ingredients": [
-            [
-                "choklad",
-                1
-            ],
-            [
-                "sm\u00f6r",
-                1
-            ],
-            [
-                "str\u00f6socker",
-                1
-            ],
-            [
-                "sirap",
-                1
-            ],
-            [
-                "vaniljsocker",
-                1
-            ],
-            [
-                "vetemj\u00f6l",
-                1
-            ],
-            [
-                "kakao",
-                1
-            ],
-            [
-                "\u00e4gg",
-                1
-            ],
-            [
-                "flingsalt",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/kladdkakecookies-728835/"
-    },
-    {
-        "title": "Krispig potatis med \u00f6rter",
-        "ingredients": [
-            [
-                "sm\u00f6r",
-                1
-            ],
-            [
-                "vitl\u00f6ksklyftor",
-                1
-            ],
-            [
-                "rosmarin",
-                1
-            ],
-            [
-                "potatis",
-                2
-            ],
-            [
-                "salt",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/krispig-potatis-med-orter-726195/"
-    },
-    {
-        "title": "Friterad banan med glass",
-        "ingredients": [
-            [
-                "vetemj\u00f6l",
-                1
-            ],
-            [
-                "bakpulver",
-                1
-            ],
-            [
-                "vaniljsocker",
-                1
-            ],
-            [
-                "vatten",
-                1
-            ],
-            [
-                "bananer",
-                1
-            ],
-            [
-                "rapsolja",
-                1
-            ],
-            [
-                "vaniljglass",
-                1
-            ],
-            [
-                "sirap",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/friterad-banan-med-glass-728913/"
-    },
-    {
-        "title": "Zucchinibr\u00f6d med fr\u00f6n",
-        "ingredients": [
-            [
-                "j\u00e4st",
-                1
-            ],
-            [
-                "vatten",
-                1
-            ],
-            [
-                "motsvarar",
-                1
-            ],
-            [
-                "havregryn",
-                1
-            ],
-            [
-                "salt",
-                1
-            ],
-            [
-                "honung",
-                1
-            ],
-            [
-                "zucchini",
-                1
-            ],
-            [
-                "pumpak\u00e4rnor",
-                1
-            ],
-            [
-                "vallmofr\u00f6n",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/zucchinibrod-med-fron-729485/"
-    },
-    {
-        "title": "Kycklingpasta med tomat och spenat",
-        "ingredients": [
-            [
-                "pasta",
-                1
-            ],
-            [
-                "vitl\u00f6ksklyftor",
-                1
-            ],
-            [
-                "k\u00f6rsb\u00e4rstomater",
-                1
-            ],
-            [
-                "citron",
-                1
-            ],
-            [
-                "olivolja",
-                1
-            ],
-            [
-                "kycklingl\u00e5rfil\u00e9",
-                1
-            ],
-            [
-                "salt",
-                1
-            ],
-            [
-                "kycklingbuljongt\u00e4rning",
-                1
-            ],
-            [
-                "vispgr\u00e4dde",
-                1
-            ],
-            [
-                "babyspenat",
-                1
-            ],
-            [
-                "flarn",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/kycklingpasta-med-tomat-och-spenat-716957/"
-    },
-    {
-        "title": "F\u00e4rskpotatis med torsk och salsa verde",
-        "ingredients": [
-            [
-                "persilja",
-                1
-            ],
-            [
-                "koriander",
-                1
-            ],
-            [
-                "vitl\u00f6ksklyfta",
-                1
-            ],
-            [
-                "kapris",
-                1
-            ],
-            [
-                "sardeller",
-                1
-            ],
-            [
-                "olivolja",
-                1
-            ],
-            [
-                "vitvinsvin\u00e4ger",
-                1
-            ],
-            [
-                "torskrygg",
-                1
-            ],
-            [
-                "salt",
-                1
-            ],
-            [
-                "f\u00e4rskpotatisar",
-                1
-            ],
-            [
-                "olivolja",
-                1
-            ],
-            [
-                "fraiche",
-                1
-            ],
-            [
-                "r\u00f6dl\u00f6k",
-                1
-            ],
-            [
-                "koriander",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/farskpotatis-med-torsk-och-salsa-verde-728121/"
-    },
-    {
-        "title": "Tostada med pok\u00e9-ceviche",
-        "ingredients": [
-            [
-                "rapsolja",
-                1
-            ],
-            [
-                "majstortillabr\u00f6d",
-                1
-            ],
-            [
-                "mango",
-                1
-            ],
-            [
-                "gurka",
-                1
-            ],
-            [
-                "salladsl\u00f6kar",
-                1
-            ],
-            [
-                "lax",
-                1
-            ],
-            [
-                "majonn\u00e4s",
-                1
-            ],
-            [
-                "sesamolja",
-                1
-            ],
-            [
-                "soja",
-                1
-            ],
-            [
-                "limejuice",
-                1
-            ],
-            [
-                "koriander",
-                1
-            ],
-            [
-                "sesamfr\u00f6n",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/tostada-med-poke-ceviche-721841/"
-    },
-    {
-        "title": "Asiatiska grillspett p\u00e5 fl\u00e4skk\u00f6tt",
-        "ingredients": [
-            [
-                "vitl\u00f6ksklyftor",
-                1
-            ],
-            [
-                "finriven",
-                1
-            ],
-            [
-                "soja",
-                1
-            ],
-            [
-                "rapsolja",
-                1
-            ],
-            [
-                "srirachas\u00e5s",
-                1
-            ],
-            [
-                "risvin\u00e4ger",
-                1
-            ],
-            [
-                "ostrons\u00e5s",
-                1
-            ],
-            [
-                "fl\u00e4skkarr\u00e9",
-                1
-            ],
-            [
-                "grillspett",
-                2
-            ]
-        ],
-        "url": "https://www.ica.se/recept/asiatiska-grillspett-pa-flaskkott-726835/"
-    },
-    {
-        "title": "Snabb cheesecake med After Eight",
-        "ingredients": [
-            [
-                "kakor",
-                1
-            ],
-            [
-                "m\u00f6rk",
-                1
-            ],
-            [
-                "bitar",
-                1
-            ],
-            [
-                "vispgr\u00e4dde",
-                1
-            ],
-            [
-                "f\u00e4rskost",
-                1
-            ],
-            [
-                "florsocker",
-                1
-            ],
-            [
-                "myntablad",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/snabb-cheesecake-med-after-eight-725084/"
-    },
-    {
-        "title": "Panerad torsk med nudelsallad och rostad vitl\u00f6ksdressing",
-        "ingredients": [
-            [
-                "risnudlar",
-                1
-            ],
-            [
-                "r\u00f6dk\u00e5l",
-                1
-            ],
-            [
-                "limeskal",
-                1
-            ],
-            [
-                "limejuice",
-                1
-            ],
-            [
-                "salt",
-                1
-            ],
-            [
-                "salladsmix",
-                1
-            ],
-            [
-                "jordn\u00f6tter",
-                1
-            ],
-            [
-                "vitl\u00f6ksklyftor",
-                1
-            ],
-            [
-                "olja",
-                1
-            ],
-            [
-                "chilis\u00e5s",
-                1
-            ],
-            [
-                "soja",
-                1
-            ],
-            [
-                "finriven",
-                1
-            ],
-            [
-                "torsk-",
-                1
-            ],
-            [
-                "salt",
-                1
-            ],
-            [
-                "\u00e4gg",
-                1
-            ],
-            [
-                "vetemj\u00f6l",
-                1
-            ],
-            [
-                "panko",
-                1
-            ],
-            [
-                "olja",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/panerad-torsk-med-nudelsallad-och-rostad-vitloksdressing-724434/"
-    },
-    {
-        "title": "Zucchini- och quinoabiffar med f\u00e4nk\u00e5lstzatsiki i pitabr\u00f6d",
-        "ingredients": [
-            [
-                "kall",
-                1
-            ],
-            [
-                "zucchini",
-                1
-            ],
-            [
-                "\u00e4gg",
-                1
-            ],
-            [
-                "tomater",
-                1
-            ],
-            [
-                "fetaost",
-                1
-            ],
-            [
-                "vitl\u00f6ksklyftor",
-                1
-            ],
-            [
-                "basilika",
-                1
-            ],
-            [
-                "str\u00f6br\u00f6d",
-                1
-            ],
-            [
-                "salt",
-                1
-            ],
-            [
-                "svartpeppar",
-                1
-            ],
-            [
-                "olivolja",
-                1
-            ],
-            [
-                "f\u00e4nk\u00e5l",
-                1
-            ],
-            [
-                "citronjuice",
-                1
-            ],
-            [
-                "salt",
-                1
-            ],
-            [
-                "yoghurt",
-                1
-            ],
-            [
-                "vitl\u00f6ksklyftor",
-                1
-            ],
-            [
-                "honung",
-                1
-            ],
-            [
-                "r\u00f6dl\u00f6k",
-                1
-            ],
-            [
-                "tomater",
-                1
-            ],
-            [
-                "citron",
-                1
-            ],
-            [
-                "pitabr\u00f6d",
-                2
-            ],
-            [
-                "bladsallad",
-                1
-            ],
-            [
-                "bladpersilja",
-                1
-            ],
-            [
-                "basilika",
-                1
-            ],
-            [
-                "srirachas\u00e5s",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/zucchini-och-quinoabiffar-med-fankalstzatsiki-i-pitabrod-724203/"
-    },
-    {
-        "title": "Fluffiga pannkakor med ricotta och citron",
-        "ingredients": [
-            [
-                "vetemj\u00f6l",
-                1
-            ],
-            [
-                "bakpulver",
-                1
-            ],
-            [
-                "str\u00f6socker",
-                1
-            ],
-            [
-                "salt",
-                1
-            ],
-            [
-                "\u00e4gg",
-                1
-            ],
-            [
-                "mj\u00f6lk",
-                1
-            ],
-            [
-                "ricottaost",
-                1
-            ],
-            [
-                "vaniljpulver",
-                1
-            ],
-            [
-                "citronskal",
-                1
-            ],
-            [
-                "vallmofr\u00f6n",
-                1
-            ],
-            [
-                "sm\u00f6r",
-                1
-            ],
-            [
-                "sm\u00f6r",
-                1
-            ],
-            [
-                "l\u00f6nnsirap",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/fluffiga-pannkakor-med-ricotta-och-citron-728004/"
-    },
-    {
-        "title": "Bowl med matvete och l\u00e5ngbakad karr\u00e9",
-        "ingredients": [
-            [
-                "matvete",
-                2
-            ],
-            [
-                "socker\u00e4rtor",
-                1
-            ],
-            [
-                "gurka",
-                1
-            ],
-            [
-                "tomatpur\u00e9",
-                1
-            ],
-            [
-                "dijonsenap",
-                1
-            ],
-            [
-                "r\u00f6rsocker",
-                1
-            ],
-            [
-                "salt",
-                1
-            ],
-            [
-                "vatten",
-                1
-            ],
-            [
-                "fl\u00e4skkarr\u00e9",
-                1
-            ],
-            [
-                "koriander",
-                1
-            ],
-            [
-                "cashewn\u00f6tter",
-                1
-            ],
-            [
-                "limeklyftor",
-                1
-            ],
-            [
-                "koriander",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/bowl-med-matvete-och-langbakad-karre-726747/"
-    },
-    {
-        "title": "Sticky chicken med ris",
-        "ingredients": [
-            [
-                "ris",
-                2
-            ],
-            [
-                "kyckling",
-                1
-            ],
-            [
-                "k\u00e5lrabbi",
-                1
-            ],
-            [
-                "gurka",
-                1
-            ],
-            [
-                "salt",
-                1
-            ],
-            [
-                "socker",
-                1
-            ],
-            [
-                "vin\u00e4ger",
-                1
-            ],
-            [
-                "chilis\u00e5s",
-                1
-            ],
-            [
-                "ketchup",
-                1
-            ],
-            [
-                "sesamolja",
-                1
-            ],
-            [
-                "str\u00f6socker",
-                1
-            ],
-            [
-                "vitl\u00f6ksklyfta",
-                1
-            ],
-            [
-                "vin\u00e4ger",
-                1
-            ],
-            [
-                "soja",
-                1
-            ],
-            [
-                "finriven",
-                1
-            ],
-            [
-                "vatten",
-                1
-            ],
-            [
-                "salladsl\u00f6kar",
-                1
-            ],
-            [
-                "sesamfr\u00f6n",
-                1
-            ],
-            [
-                "koriander",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/sticky-chicken-med-ris-729070/"
-    },
-    {
-        "title": "Nachos med kryddiga svarta b\u00f6nor",
-        "ingredients": [
-            [
-                "kokta",
-                1
-            ],
-            [
-                "r\u00f6dl\u00f6k",
-                1
-            ],
-            [
-                "vitl\u00f6ksklyfta",
-                1
-            ],
-            [
-                "olja",
-                1
-            ],
-            [
-                "oelek",
-                1
-            ],
-            [
-                "tomatpur\u00e9",
-                1
-            ],
-            [
-                "vatten",
-                1
-            ],
-            [
-                "salt",
-                1
-            ],
-            [
-                "tomater",
-                1
-            ],
-            [
-                "paprika",
-                1
-            ],
-            [
-                "lime",
-                1
-            ],
-            [
-                "olja",
-                1
-            ],
-            [
-                "salt",
-                1
-            ],
-            [
-                "nachochips",
-                1
-            ],
-            [
-                "pr\u00e4stost",
-                1
-            ],
-            [
-                "avokador",
-                1
-            ],
-            [
-                "majskorn",
-                1
-            ],
-            [
-                "isbergssalladshuvud",
-                1
-            ],
-            [
-                "gr\u00e4ddfil",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/nachos-med-kryddiga-svarta-bonor-722488/"
-    },
-    {
-        "title": "Semifreddo med choklad, dulce de leche och hasseln\u00f6tter",
-        "ingredients": [
-            [
-                "choklad",
-                1
-            ],
-            [
-                "\u00e4gg",
-                1
-            ],
-            [
-                "str\u00f6socker",
-                1
-            ],
-            [
-                "vispgr\u00e4dde",
-                1
-            ],
-            [
-                "hasseln\u00f6tter",
-                2
-            ],
-            [
-                "mj\u00f6lk",
-                1
-            ],
-            [
-                "kakaonibs",
-                1
-            ],
-            [
-                "flingsalt",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/semifreddo-med-choklad-dulce-de-leche-och-hasselnotter-727589/"
-    },
-    {
-        "title": "Pannkakor med osynliga linser",
-        "ingredients": [
-            [
-                "linser",
-                2
-            ],
-            [
-                "\u00e4gg",
-                1
-            ],
-            [
-                "mj\u00f6lk",
-                1
-            ],
-            [
-                "vetemj\u00f6l",
-                1
-            ],
-            [
-                "salt",
-                1
-            ],
-            [
-                "sm\u00f6r",
-                1
-            ],
-            [
-                "ricottaost",
-                1
-            ],
-            [
-                "honung",
-                1
-            ],
-            [
-                "yoghurt",
-                1
-            ],
-            [
-                "bl\u00e5b\u00e4r",
-                1
-            ],
-            [
-                "mandelsp\u00e5n",
-                1
-            ],
-            [
-                "honung",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/pannkakor-med-osynliga-linser-725198/"
-    },
-    {
-        "title": "Spring rolls med biff och jordn\u00f6tsdressing",
-        "ingredients": [
-            [
-                "\u00e4ttiksprit",
-                1
-            ],
-            [
-                "vatten",
-                1
-            ],
-            [
-                "str\u00f6socker",
-                1
-            ],
-            [
-                "salt",
-                1
-            ],
-            [
-                "l\u00e4tt",
-                1
-            ],
-            [
-                "chili",
-                1
-            ],
-            [
-                "schalottenl\u00f6k",
-                1
-            ],
-            [
-                "koriander",
-                1
-            ],
-            [
-                "morot",
-                1
-            ],
-            [
-                "gurka",
-                1
-            ],
-            [
-                "rucola",
-                1
-            ],
-            [
-                "koriander",
-                1
-            ],
-            [
-                "glasnudlar",
-                1
-            ],
-            [
-                "olivolja",
-                1
-            ],
-            [
-                "entrec\u00f4te",
-                1
-            ],
-            [
-                "salt",
-                1
-            ],
-            [
-                "svartpeppar",
-                1
-            ],
-            [
-                "sm\u00f6r",
-                1
-            ],
-            [
-                "vitl\u00f6ksklyftor",
-                1
-            ],
-            [
-                "rispapper",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/spring-rolls-med-biff-och-jordnotsdressing-726360/"
-    },
-    {
-        "title": "Panzanella med rostad s\u00f6tpotatis och gr\u00f6nk\u00e5l",
-        "ingredients": [
-            [
-                "ljust",
-                1
-            ],
-            [
-                "vitl\u00f6ksklyfta",
-                1
-            ],
-            [
-                "olivolja",
-                1
-            ],
-            [
-                "salt",
-                1
-            ],
-            [
-                "s\u00f6tpotatis",
-                2
-            ],
-            [
-                "l\u00f6kar",
-                1
-            ],
-            [
-                "vitl\u00f6ksklyftor",
-                1
-            ],
-            [
-                "peppar",
-                1
-            ],
-            [
-                "kvistar",
-                1
-            ],
-            [
-                "olivolja",
-                1
-            ],
-            [
-                "salt",
-                1
-            ],
-            [
-                "svartpeppar",
-                1
-            ],
-            [
-                "gr\u00f6nk\u00e5l",
-                2
-            ],
-            [
-                "\u00e4ppelcidervin\u00e4ger",
-                1
-            ],
-            [
-                "olivolja",
-                1
-            ],
-            [
-                "salt",
-                1
-            ],
-            [
-                "dadlar",
-                1
-            ],
-            [
-                "mandlar",
-                1
-            ],
-            [
-                "\u00e4delost",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/panzanella-med-rostad-sotpotatis-och-gronkal-727594/"
-    },
-    {
-        "title": "Saffransbullar med vit choklad",
-        "ingredients": [
-            [
-                "sm\u00f6r",
-                1
-            ],
-            [
-                "saffran",
-                1
-            ],
-            [
-                "mj\u00f6lk",
-                1
-            ],
-            [
-                "j\u00e4st",
-                1
-            ],
-            [
-                "socker",
-                1
-            ],
-            [
-                "salt",
-                1
-            ],
-            [
-                "vetemj\u00f6l",
-                1
-            ],
-            [
-                "choklad",
-                2
-            ],
-            [
-                "sm\u00f6r",
-                1
-            ],
-            [
-                "socker",
-                1
-            ],
-            [
-                "\u00e4gg",
-                1
-            ],
-            [
-                "p\u00e4rlsocker",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/saffransbullar-med-vit-choklad-725940/"
-    },
-    {
-        "title": "Sm\u00f6rdegsknyten med parmaskinka och sparris",
-        "ingredients": [
-            [
-                "f\u00f6rp",
-                1
-            ],
-            [
-                "sparris",
-                2
-            ],
-            [
-                "parmaskinka",
-                2
-            ],
-            [
-                "ost",
-                1
-            ],
-            [
-                "salt",
-                1
-            ],
-            [
-                "peppar",
-                1
-            ],
-            [
-                "olivolja",
-                1
-            ],
-            [
-                "\u00e4gg",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/smordegsknyten-med-parmaskinka-och-sparris-728655/"
-    },
-    {
-        "title": "Morotsfrallor",
-        "ingredients": [
-            [
-                "mor\u00f6tter",
-                1
-            ],
-            [
-                "vatten",
-                1
-            ],
-            [
-                "j\u00e4st",
-                1
-            ],
-            [
-                "olivolja",
-                1
-            ],
-            [
-                "special",
-                1
-            ],
-            [
-                "salt",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/morotsfrallor-726218/"
-    },
-    {
-        "title": "Bibimbap",
-        "ingredients": [
-            [
-                "soja",
-                1
-            ],
-            [
-                "str\u00f6socker",
-                1
-            ],
-            [
-                "sesamolja",
-                1
-            ],
-            [
-                "vin",
-                1
-            ],
-            [
-                "vitl\u00f6ksklyfta",
-                1
-            ],
-            [
-                "strimlat",
-                1
-            ],
-            [
-                "ris",
-                1
-            ],
-            [
-                "\u00e4gg",
-                1
-            ],
-            [
-                "olja",
-                1
-            ],
-            [
-                "kimchi",
-                1
-            ],
-            [
-                "spenat",
-                1
-            ],
-            [
-                "b\u00f6ngroddar",
-                1
-            ],
-            [
-                "sats",
-                1
-            ],
-            [
-                "gochujang",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/bibimbap-727370/"
-    },
-    {
-        "title": "Edamameb\u00f6nor med sesam och soja",
-        "ingredients": [
-            [
-                "edamameb\u00f6nor",
-                1
-            ],
-            [
-                "soja",
-                2
-            ],
-            [
-                "sesamolja",
-                1
-            ],
-            [
-                "sesamfr\u00f6n",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/edamamebonor-med-sesam-och-soja-724052/"
-    },
-    {
-        "title": "Kycklingschnitzel med nudelsallad och srirachamajo",
-        "ingredients": [
-            [
-                "glas-",
-                1
-            ],
-            [
-                "rapsolja",
-                1
-            ],
-            [
-                "limejuice",
-                1
-            ],
-            [
-                "str\u00f6socker",
-                1
-            ],
-            [
-                "soja",
-                1
-            ],
-            [
-                "k\u00e5lrabbi",
-                1
-            ],
-            [
-                "\u00e4pple",
-                1
-            ],
-            [
-                "chilipeppar",
-                1
-            ],
-            [
-                "salladsl\u00f6kar",
-                1
-            ],
-            [
-                "koriander",
-                1
-            ],
-            [
-                "kycklinginnerfil\u00e9er",
-                1
-            ],
-            [
-                "salt",
-                1
-            ],
-            [
-                "svartpeppar",
-                1
-            ],
-            [
-                "vetemj\u00f6l",
-                1
-            ],
-            [
-                "uppvispade",
-                1
-            ],
-            [
-                "panko",
-                1
-            ],
-            [
-                "sm\u00f6r",
-                1
-            ],
-            [
-                "olja",
-                1
-            ],
-            [
-                "srirachamajonn\u00e4s",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/kycklingschnitzel-med-nudelsallad-och-srirachamajo-727215/"
-    },
-    {
-        "title": "Vegansk risgrynsgr\u00f6t",
-        "ingredients": [
-            [
-                "gr\u00f6tris",
-                1
-            ],
-            [
-                "vatten",
-                1
-            ],
-            [
-                "kanelst\u00e5ng",
-                1
-            ],
-            [
-                "salt",
-                1
-            ],
-            [
-                "mandeldryck",
-                1
-            ],
-            [
-                "str\u00f6socker",
-                1
-            ],
-            [
-                "kanel",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/vegansk-risgrynsgrot-721244/"
-    },
-    {
-        "title": "Green goddess-dressing",
-        "ingredients": [
-            [
-                "persilja",
-                1
-            ],
-            [
-                "basilika",
-                1
-            ],
-            [
-                "babyspenat",
-                1
-            ],
-            [
-                "citronskal",
-                1
-            ],
-            [
-                "citronjuice",
-                1
-            ],
-            [
-                "vitl\u00f6ksklyfta",
-                1
-            ],
-            [
-                "honung",
-                1
-            ],
-            [
-                "olivolja",
-                1
-            ],
-            [
-                "salt",
-                1
-            ],
-            [
-                "svartpeppar",
-                1
-            ],
-            [
-                "yoghurt",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/green-goddess-dressing-722290/"
-    },
-    {
-        "title": "Sobanudlar med lax och miso",
-        "ingredients": [
-            [
-                "pepparrot",
-                1
-            ],
-            [
-                "misopasta",
-                1
-            ],
-            [
-                "majonn\u00e4s",
-                1
-            ],
-            [
-                "senap",
-                1
-            ],
-            [
-                "soja",
-                1
-            ],
-            [
-                "citronjuice",
-                1
-            ],
-            [
-                "bitar",
-                1
-            ],
-            [
-                "olja",
-                1
-            ],
-            [
-                "salt",
-                1
-            ],
-            [
-                "nudlar",
-                1
-            ],
-            [
-                "bladspenat",
-                1
-            ],
-            [
-                "rucola",
-                1
-            ],
-            [
-                "sm\u00f6rg\u00e5skrasse",
-                1
-            ],
-            [
-                "f\u00e4rsk",
-                1
-            ],
-            [
-                "pumpak\u00e4rnor",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/sobanudlar-med-lax-och-miso-726414/"
-    },
-    {
-        "title": "Potatisbullar",
-        "ingredients": [
-            [
-                "potatis",
-                1
-            ],
-            [
-                "salt",
-                1
-            ],
-            [
-                "vetemj\u00f6l",
-                1
-            ],
-            [
-                "\u00e4gg",
-                1
-            ],
-            [
-                "svartpeppar",
-                1
-            ],
-            [
-                "sm\u00f6r",
-                1
-            ],
-            [
-                "lingon",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/potatisbullar-729591/"
-    },
-    {
-        "title": "Sotad lax med picklat \u00e4pple och brynt sm\u00f6r",
-        "ingredients": [
-            [
-                "salt",
-                1
-            ],
-            [
-                "str\u00f6socker",
-                1
-            ],
-            [
-                "dill",
-                1
-            ],
-            [
-                "f\u00e4rsk",
-                1
-            ],
-            [
-                "sm\u00f6r",
-                2
-            ],
-            [
-                "gurka",
-                1
-            ],
-            [
-                "\u00e4ttiksprit",
-                1
-            ],
-            [
-                "str\u00f6socker",
-                1
-            ],
-            [
-                "vatten",
-                1
-            ],
-            [
-                "f\u00e4rsk",
-                1
-            ],
-            [
-                "\u00e4pplen",
-                1
-            ],
-            [
-                "pinjen\u00f6tter",
-                1
-            ],
-            [
-                "dill",
-                1
-            ],
-            [
-                "lax-",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/sotad-lax-med-picklat-apple-och-brynt-smor-724033/"
-    },
-    {
-        "title": "Frikadeller p\u00e5 kalvf\u00e4rs i tomats\u00e5s",
-        "ingredients": [
-            [
-                "l\u00f6k",
-                1
-            ],
-            [
-                "vitl\u00f6ksklyftor",
-                1
-            ],
-            [
-                "olivolja",
-                1
-            ],
-            [
-                "burkar",
-                1
-            ],
-            [
-                "gr\u00f6nsaksfond",
-                1
-            ],
-            [
-                "vatten",
-                1
-            ],
-            [
-                "salt",
-                1
-            ],
-            [
-                "kalvf\u00e4rs",
-                2
-            ],
-            [
-                "\u00e4gg",
-                1
-            ],
-            [
-                "citronskal",
-                1
-            ],
-            [
-                "basilika",
-                1
-            ],
-            [
-                "parmesan",
-                1
-            ],
-            [
-                "salt",
-                1
-            ],
-            [
-                "svartpeppar",
-                1
-            ],
-            [
-                "spaghetti",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/frikadeller-pa-kalvfars-i-tomatsas-726655/"
-    },
-    {
-        "title": "Zucchinifritters med fetaost",
-        "ingredients": [
-            [
-                "vetemj\u00f6l",
-                1
-            ],
-            [
-                "bakpulver",
-                1
-            ],
-            [
-                "\u00e4gg",
-                1
-            ],
-            [
-                "fetaost",
-                2
-            ],
-            [
-                "zucchini",
-                1
-            ],
-            [
-                "\u00f6rter",
-                1
-            ],
-            [
-                "salt",
-                1
-            ],
-            [
-                "svartpeppar",
-                1
-            ],
-            [
-                "olivolja",
-                1
-            ],
-            [
-                "tomatsallad",
-                1
-            ],
-            [
-                "br\u00f6d",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/zucchinifritters-med-fetaost-722474/"
-    },
-    {
-        "title": "Rostad f\u00e4rskpotatis med \u00f6rtolja",
-        "ingredients": [
-            [
-                "f\u00e4rskpotatis",
-                2
-            ],
-            [
-                "olivolja",
-                1
-            ],
-            [
-                "flingsalt",
-                1
-            ],
-            [
-                "salt",
-                1
-            ],
-            [
-                "\u00f6rter",
-                1
-            ],
-            [
-                "citron",
-                1
-            ],
-            [
-                "vitl\u00f6ksklyftor",
-                1
-            ],
-            [
-                "olivolja",
-                1
-            ],
-            [
-                "parmesan",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/rostad-farskpotatis-med-ortolja-715233/"
-    },
-    {
-        "title": "Jordgubbstiramisu",
-        "ingredients": [
-            [
-                "jordgubbar",
-                1
-            ],
-            [
-                "\u00e4ggulor",
-                1
-            ],
-            [
-                "mascarpone",
-                1
-            ],
-            [
-                "str\u00f6socker",
-                1
-            ],
-            [
-                "vispgr\u00e4dde",
-                1
-            ],
-            [
-                "amaretto",
-                1
-            ],
-            [
-                "fl\u00e4dersaft",
-                1
-            ],
-            [
-                "savoiardikex",
-                1
-            ],
-            [
-                "kakao",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/jordgubbstiramisu-725763/"
-    },
-    {
-        "title": "Bulgogi p\u00e5 kyckling",
-        "ingredients": [
-            [
-                "kycklingl\u00e5rfil\u00e9",
-                1
-            ],
-            [
-                "gochujang",
-                1
-            ],
-            [
-                "soja",
-                1
-            ],
-            [
-                "str\u00f6socker",
-                1
-            ],
-            [
-                "sesamolja",
-                1
-            ],
-            [
-                "vitl\u00f6ksklyftor",
-                1
-            ],
-            [
-                "r\u00e4disor",
-                1
-            ],
-            [
-                "salladsl\u00f6kar",
-                1
-            ],
-            [
-                "risvin\u00e4ger",
-                1
-            ],
-            [
-                "str\u00f6socker",
-                1
-            ],
-            [
-                "ris",
-                1
-            ],
-            [
-                "majonn\u00e4s",
-                1
-            ],
-            [
-                "gochujang",
-                1
-            ],
-            [
-                "sesamolja",
-                1
-            ],
-            [
-                "vitl\u00f6ksklyfta",
-                1
-            ],
-            [
-                "salladsblad",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/bulgogi-pa-kyckling-727368/"
-    },
-    {
-        "title": "Caponata med aubergine och paprika",
-        "ingredients": [
-            [
-                "zucchini",
-                1
-            ],
-            [
-                "paprikor",
-                1
-            ],
-            [
-                "selleristj\u00e4lkar",
-                1
-            ],
-            [
-                "olivolja",
-                1
-            ],
-            [
-                "tomats\u00e5s",
-                1
-            ],
-            [
-                "vatten",
-                1
-            ],
-            [
-                "salt",
-                1
-            ],
-            [
-                "svartpeppar",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/caponata-med-aubergine-och-paprika-722162/"
-    },
-    {
-        "title": "Vegansk pavlova med mango och passionsfrukt",
-        "ingredients": [
-            [
-                "kik\u00e4rtsspad",
-                1
-            ],
-            [
-                "str\u00f6socker",
-                1
-            ],
-            [
-                "citronsaft",
-                1
-            ],
-            [
-                "passionsfrukt",
-                2
-            ],
-            [
-                "alternativ",
-                1
-            ],
-            [
-                "florsocker",
-                1
-            ],
-            [
-                "pistagen\u00f6tter",
-                1
-            ],
-            [
-                "mango",
-                2
-            ],
-            [
-                "passionsfrukt",
-                2
-            ],
-            [
-                "f\u00e4rsk",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/vegansk-pavlova-med-mango-och-passionsfrukt-723512/"
-    },
-    {
-        "title": "Lutfisk med \u00e4rter och bacon",
-        "ingredients": [
-            [
-                "lutfisk",
-                1
-            ],
-            [
-                "salt",
-                1
-            ],
-            [
-                "sm\u00f6r",
-                1
-            ],
-            [
-                "vetemj\u00f6l",
-                1
-            ],
-            [
-                "mj\u00f6lk",
-                1
-            ],
-            [
-                "vispgr\u00e4dde",
-                1
-            ],
-            [
-                "salt",
-                1
-            ],
-            [
-                "kryddpeppar",
-                1
-            ],
-            [
-                "bacon",
-                2
-            ],
-            [
-                "sm\u00f6r",
-                1
-            ],
-            [
-                "frysta",
-                1
-            ],
-            [
-                "potatis",
-                1
-            ],
-            [
-                "kryddpeppar",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/lutfisk-med-arter-och-bacon-599681/"
-    },
-    {
-        "title": "Glass med kondenserad mj\u00f6lk",
-        "ingredients": [
-            [
-                "vispgr\u00e4dde",
-                1
-            ],
-            [
-                "mj\u00f6lk",
-                2
-            ],
-            [
-                "passionsfrukt",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/glass-med-kondenserad-mjolk-729056/"
-    },
-    {
-        "title": "Lasagne med halloumi, spenat och pumpak\u00e4rnor",
-        "ingredients": [
-            [
-                "l\u00f6k",
-                1
-            ],
-            [
-                "vitl\u00f6ksklyfta",
-                1
-            ],
-            [
-                "rapsolja",
-                1
-            ],
-            [
-                "tomatpur\u00e9",
-                1
-            ],
-            [
-                "tomater",
-                1
-            ],
-            [
-                "honung",
-                1
-            ],
-            [
-                "gr\u00f6nsaksbuljongt\u00e4rningar",
-                1
-            ],
-            [
-                "timjan",
-                1
-            ],
-            [
-                "vatten",
-                1
-            ],
-            [
-                "bladspenat",
-                1
-            ],
-            [
-                "salt",
-                1
-            ],
-            [
-                "halloumi",
-                1
-            ],
-            [
-                "lasagneplattor",
-                1
-            ],
-            [
-                "pumpak\u00e4rnor",
-                2
-            ],
-            [
-                "pr\u00e4stost",
-                1
-            ],
-            [
-                "timjan",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/lasagne-med-halloumi-spenat-och-pumpakarnor-718382/"
-    },
-    {
-        "title": "Saffransbullar med vanilj",
-        "ingredients": [
-            [
-                "j\u00e4st",
-                1
-            ],
-            [
-                "sm\u00f6r",
-                1
-            ],
-            [
-                "p\u00e5sar",
-                1
-            ],
-            [
-                "str\u00f6socker",
-                1
-            ],
-            [
-                "mj\u00f6lk",
-                1
-            ],
-            [
-                "kvarg",
-                1
-            ],
-            [
-                "salt",
-                1
-            ],
-            [
-                "\u00e4gg",
-                1
-            ],
-            [
-                "vetemj\u00f6l",
-                1
-            ],
-            [
-                "sm\u00f6r",
-                1
-            ],
-            [
-                "str\u00f6socker",
-                1
-            ],
-            [
-                "vaniljsocker",
-                1
-            ],
-            [
-                "\u00e4gg",
-                1
-            ],
-            [
-                "p\u00e4rlsocker",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/saffransbullar-med-vanilj-714255/"
-    },
-    {
-        "title": "Banoffee pie i glas",
-        "ingredients": [
-            [
-                "banan",
-                1
-            ],
-            [
-                "digestivekex",
-                1
-            ],
-            [
-                "vispgr\u00e4dde",
-                1
-            ],
-            [
-                "dulce",
-                1
-            ],
-            [
-                "m\u00f6rk",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/banoffee-pie-i-glas-726051/"
-    },
-    {
-        "title": "Linsgryta med kokosmj\u00f6lk",
-        "ingredients": [
-            [
-                "ris",
-                1
-            ],
-            [
-                "l\u00f6k",
-                1
-            ],
-            [
-                "olja",
-                1
-            ],
-            [
-                "vitl\u00f6ksklyfta",
-                1
-            ],
-            [
-                "curry",
-                1
-            ],
-            [
-                "tomatpur\u00e9",
-                1
-            ],
-            [
-                "kokosmj\u00f6lk",
-                2
-            ],
-            [
-                "vatten",
-                1
-            ],
-            [
-                "gr\u00f6nsaksbuljongt\u00e4rning",
-                1
-            ],
-            [
-                "linser",
-                1
-            ],
-            [
-                "oelek",
-                1
-            ],
-            [
-                "k\u00f6rsb\u00e4rstomater",
-                1
-            ],
-            [
-                "salt",
-                1
-            ],
-            [
-                "peppar",
-                1
-            ],
-            [
-                "koriander",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/linsgryta-med-kokosmjolk-724788/"
-    },
-    {
-        "title": "Blodapelsin- och vallmokaka",
-        "ingredients": [
-            [
-                "motsvarar",
-                1
-            ],
-            [
-                "bakpulver",
-                1
-            ],
-            [
-                "bikarbonat",
-                1
-            ],
-            [
-                "salt",
-                1
-            ],
-            [
-                "vaniljsocker",
-                1
-            ],
-            [
-                "vallmofr\u00f6n",
-                1
-            ],
-            [
-                "sm\u00f6r",
-                1
-            ],
-            [
-                "str\u00f6socker",
-                1
-            ],
-            [
-                "\u00e4gg",
-                1
-            ],
-            [
-                "vispgr\u00e4dde",
-                1
-            ],
-            [
-                "finrivet",
-                1
-            ],
-            [
-                "blodapelsinjuice",
-                1
-            ],
-            [
-                "blodapelsinjuice",
-                1
-            ],
-            [
-                "florsocker",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/blodapelsin-och-vallmokaka-728815/"
-    },
-    {
-        "title": "Skaldjurslasagne med ricotta och tomat",
-        "ingredients": [
-            [
-                "purjol\u00f6k",
-                1
-            ],
-            [
-                "f\u00e4nk\u00e5l",
-                1
-            ],
-            [
-                "vitl\u00f6ksklyfta",
-                1
-            ],
-            [
-                "sm\u00f6r",
-                1
-            ],
-            [
-                "vin",
-                1
-            ],
-            [
-                "bladspenat",
-                1
-            ],
-            [
-                "salt",
-                1
-            ],
-            [
-                "peppar",
-                1
-            ],
-            [
-                "ricottaost",
-                1
-            ],
-            [
-                "vispgr\u00e4dde",
-                1
-            ],
-            [
-                "hummerfond",
-                1
-            ],
-            [
-                "citronskal",
-                1
-            ],
-            [
-                "k\u00f6rsb\u00e4rstomater",
-                1
-            ],
-            [
-                "lasagneplattor",
-                1
-            ],
-            [
-                "skalade",
-                1
-            ],
-            [
-                "parmesan",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/skaldjurslasagne-med-ricotta-och-tomat-724937/"
-    },
-    {
-        "title": "Risotto med skogschampinjoner",
-        "ingredients": [
-            [
-                "schalottenl\u00f6kar",
-                1
-            ],
-            [
-                "vitl\u00f6ksklyfta",
-                1
-            ],
-            [
-                "svampbuljong",
-                1
-            ],
-            [
-                "olivolja",
-                1
-            ],
-            [
-                "carnaroli-",
-                1
-            ],
-            [
-                "vin",
-                1
-            ],
-            [
-                "kastanjechampinjoner",
-                1
-            ],
-            [
-                "sm\u00f6r",
-                1
-            ],
-            [
-                "parmesan",
-                1
-            ],
-            [
-                "svartpeppar",
-                1
-            ],
-            [
-                "rucola",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/risotto-med-skogschampinjoner-716952/"
-    },
-    {
-        "title": "Daimfudge",
-        "ingredients": [
-            [
-                "mj\u00f6lkchoklad",
-                1
-            ],
-            [
-                "choklad",
-                1
-            ],
-            [
-                "sm\u00f6r",
-                1
-            ],
-            [
-                "mj\u00f6lk",
-                1
-            ],
-            [
-                "vaniljsocker",
-                1
-            ],
-            [
-                "dubbeldaim",
-                1
-            ],
-            [
-                "mandlar",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/daimfudge-722913/"
-    },
-    {
-        "title": "Romdipp med chips",
-        "ingredients": [
-            [
-                "silverl\u00f6k",
-                1
-            ],
-            [
-                "smetana",
-                1
-            ],
-            [
-                "gr\u00e4ddfil",
-                1
-            ],
-            [
-                "limeskal",
-                1
-            ],
-            [
-                "limejuice",
-                1
-            ],
-            [
-                "dill",
-                1
-            ],
-            [
-                "salt",
-                1
-            ],
-            [
-                "peppar",
-                1
-            ],
-            [
-                "stenbitsrom",
-                1
-            ],
-            [
-                "l\u00e4ttsaltade",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/romdipp-med-chips-722273/"
-    },
-    {
-        "title": "Rostad fransk potatissallad med dragon",
-        "ingredients": [
-            [
-                "f\u00e4rskpotatis",
-                1
-            ],
-            [
-                "olivolja",
-                1
-            ],
-            [
-                "flingsalt",
-                1
-            ],
-            [
-                "peppar",
-                1
-            ],
-            [
-                "kapris",
-                1
-            ],
-            [
-                "schalottenl\u00f6kar",
-                1
-            ],
-            [
-                "bladpersilja",
-                1
-            ],
-            [
-                "dragon",
-                2
-            ],
-            [
-                "r\u00f6dvinsvin\u00e4ger",
-                1
-            ],
-            [
-                "dijonsenap",
-                1
-            ],
-            [
-                "rapsolja",
-                1
-            ],
-            [
-                "salt",
-                1
-            ],
-            [
-                "peppar",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/rostad-fransk-potatissallad-med-dragon-720634/"
-    },
-    {
-        "title": "Mustig gulasch p\u00e5 h\u00f6grev och potatis",
-        "ingredients": [
-            [
-                "h\u00f6grev",
-                2
-            ],
-            [
-                "schalottenl\u00f6kar",
-                1
-            ],
-            [
-                "paprikor",
-                1
-            ],
-            [
-                "peppar",
-                1
-            ],
-            [
-                "kumminfr\u00f6n",
-                1
-            ],
-            [
-                "olja",
-                1
-            ],
-            [
-                "vitl\u00f6ksklyftor",
-                1
-            ],
-            [
-                "paprikapulver",
-                1
-            ],
-            [
-                "kalvfond",
-                1
-            ],
-            [
-                "vatten",
-                1
-            ],
-            [
-                "potatisar",
-                1
-            ],
-            [
-                "tomatpur\u00e9",
-                1
-            ],
-            [
-                "salt",
-                1
-            ],
-            [
-                "peppar",
-                1
-            ],
-            [
-                "yoghurt",
-                1
-            ],
-            [
-                "timjan",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/mustig-gulasch-pa-hogrev-och-potatis-724865/"
-    },
-    {
-        "title": "Pizza med s\u00f6tpotatis och getost",
-        "ingredients": [
-            [
-                "pizzakit",
-                1
-            ],
-            [
-                "s\u00f6tpotatis",
-                2
-            ],
-            [
-                "r\u00f6dl\u00f6k",
-                1
-            ],
-            [
-                "salt",
-                1
-            ],
-            [
-                "chiliflakes",
-                1
-            ],
-            [
-                "torkad",
-                1
-            ],
-            [
-                "oliver",
-                1
-            ],
-            [
-                "getost",
-                2
-            ],
-            [
-                "riven",
-                1
-            ],
-            [
-                "rucola",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/pizza-med-sotpotatis-och-getost-723821/"
-    },
-    {
-        "title": "Finsk morotsl\u00e5da",
-        "ingredients": [
-            [
-                "mor\u00f6tter",
-                1
-            ],
-            [
-                "vatten",
-                1
-            ],
-            [
-                "salt",
-                1
-            ],
-            [
-                "gr\u00f6tris",
-                1
-            ],
-            [
-                "vispgr\u00e4dde",
-                1
-            ],
-            [
-                "mj\u00f6lk",
-                1
-            ],
-            [
-                "\u00e4gg",
-                1
-            ],
-            [
-                "sirap",
-                1
-            ],
-            [
-                "salt",
-                1
-            ],
-            [
-                "muskotn\u00f6t",
-                1
-            ],
-            [
-                "vitpeppar",
-                1
-            ],
-            [
-                "sm\u00f6r",
-                1
-            ],
-            [
-                "str\u00f6br\u00f6d",
-                1
-            ],
-            [
-                "sm\u00f6r",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/finsk-morotslada-728540/"
-    },
-    {
-        "title": "L\u00f6jromspizza med pr\u00e4stost och potatis.",
-        "ingredients": [
-            [
-                "\u00e4ttika",
-                1
-            ],
-            [
-                "str\u00f6socker",
-                1
-            ],
-            [
-                "salt",
-                1
-            ],
-            [
-                "vatten",
-                1
-            ],
-            [
-                "r\u00f6dl\u00f6k",
-                1
-            ],
-            [
-                "vatten",
-                1
-            ],
-            [
-                "j\u00e4st",
-                1
-            ],
-            [
-                "salt",
-                1
-            ],
-            [
-                "str\u00f6socker",
-                1
-            ],
-            [
-                "olivolja",
-                1
-            ],
-            [
-                "special",
-                1
-            ],
-            [
-                "str\u00f6br\u00f6d",
-                1
-            ],
-            [
-                "pr\u00e4stost",
-                2
-            ],
-            [
-                "potatisar",
-                1
-            ],
-            [
-                "l\u00f6jrom",
-                1
-            ],
-            [
-                "fraiche",
-                1
-            ],
-            [
-                "gr\u00e4sl\u00f6k",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/lojromspizza-med-prastost-och-potatis-722251/"
-    },
-    {
-        "title": "Lomo saltado \u2013 Peruansk oxfil\u00e9gryta",
-        "ingredients": [
-            [
-                "oxfil\u00e9",
-                1
-            ],
-            [
-                "salt",
-                1
-            ],
-            [
-                "svartpeppar",
-                1
-            ],
-            [
-                "vitvinsvin\u00e4ger",
-                1
-            ],
-            [
-                "soja",
-                1
-            ],
-            [
-                "ostrons\u00e5s",
-                1
-            ],
-            [
-                "r\u00f6dl\u00f6k",
-                1
-            ],
-            [
-                "tomat",
-                1
-            ],
-            [
-                "rapsolja",
-                1
-            ],
-            [
-                "salladsl\u00f6k",
-                1
-            ],
-            [
-                "vitl\u00f6ksklyftor",
-                1
-            ],
-            [
-                "koriander",
-                1
-            ],
-            [
-                "frites",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/lomo-saltado-peruansk-oxfilegryta-727361/"
-    },
-    {
-        "title": "Morotssoppa med kokos",
-        "ingredients": [
-            [
-                "olivolja",
-                1
-            ],
-            [
-                "hackad",
-                1
-            ],
-            [
-                "vitl\u00f6ksklyftor",
-                1
-            ],
-            [
-                "mor\u00f6tter",
-                1
-            ],
-            [
-                "spiskummin",
-                1
-            ],
-            [
-                "riven",
-                1
-            ],
-            [
-                "chiliflakes",
-                1
-            ],
-            [
-                "kokosmj\u00f6lk",
-                1
-            ],
-            [
-                "gr\u00f6nsaksfond",
-                1
-            ],
-            [
-                "vatten",
-                1
-            ],
-            [
-                "limejuice",
-                1
-            ],
-            [
-                "salt",
-                1
-            ],
-            [
-                "pumpak\u00e4rnor",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/morotssoppa-med-kokos-722533/"
-    },
-    {
-        "title": "Havrekakor",
-        "ingredients": [
-            [
-                "sm\u00f6r",
-                1
-            ],
-            [
-                "havregryn",
-                1
-            ],
-            [
-                "str\u00f6socker",
-                1
-            ],
-            [
-                "vetemj\u00f6l",
-                1
-            ],
-            [
-                "bakpulver",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/havrekakor-729379/"
-    },
-    {
-        "title": "Snabb sm\u00f6rdegspizza med svamp",
-        "ingredients": [
-            [
-                "rulle",
-                1
-            ],
-            [
-                "mascarpone",
-                1
-            ],
-            [
-                "ost",
-                1
-            ],
-            [
-                "champinjoner",
-                1
-            ],
-            [
-                "salt",
-                1
-            ],
-            [
-                "sm\u00f6rg\u00e5skrasse",
-                1
-            ],
-            [
-                "chiliflakes",
-                1
-            ],
-            [
-                "svartpeppar",
-                1
-            ],
-            [
-                "majonn\u00e4s",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/snabb-smordegspizza-med-svamp-724202/"
-    },
-    {
-        "title": "Sojalax med bakad spetsk\u00e5l",
-        "ingredients": [
-            [
-                "spetsk\u00e5l",
-                2
-            ],
-            [
-                "purjol\u00f6k",
-                1
-            ],
-            [
-                "bitar",
-                1
-            ],
-            [
-                "olja",
-                1
-            ],
-            [
-                "soja",
-                1
-            ],
-            [
-                "sesamfr\u00f6n",
-                1
-            ],
-            [
-                "limeskal",
-                1
-            ],
-            [
-                "chili",
-                1
-            ],
-            [
-                "majonn\u00e4s",
-                1
-            ],
-            [
-                "limejuice",
-                1
-            ],
-            [
-                "vatten",
-                1
-            ],
-            [
-                "salt",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/sojalax-med-bakad-spetskal-721655/"
-    },
-    {
-        "title": "V\u00e5fflor med citronsmak och vispad mascarpone",
-        "ingredients": [
-            [
-                "sm\u00f6r",
-                1
-            ],
-            [
-                "vetemj\u00f6l",
-                1
-            ],
-            [
-                "bakpulver",
-                1
-            ],
-            [
-                "salt",
-                1
-            ],
-            [
-                "str\u00f6socker",
-                1
-            ],
-            [
-                "vallmofr\u00f6n",
-                1
-            ],
-            [
-                "mj\u00f6lk",
-                1
-            ],
-            [
-                "citronskal",
-                1
-            ],
-            [
-                "vatten",
-                1
-            ],
-            [
-                "mascarpone",
-                2
-            ],
-            [
-                "vispgr\u00e4dde",
-                1
-            ],
-            [
-                "vaniljsocker",
-                1
-            ],
-            [
-                "honung",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/vafflor-med-citronsmak-och-vispad-mascarpone-726642/"
-    },
-    {
-        "title": "Taco med majsfritters och pico de gallo",
-        "ingredients": [
-            [
-                "majskorn",
-                1
-            ],
-            [
-                "silverl\u00f6k",
-                1
-            ],
-            [
-                "majsst\u00e4rkelse",
-                1
-            ],
-            [
-                "bakpulver",
-                1
-            ],
-            [
-                "kik\u00e4rtsmj\u00f6l",
-                1
-            ],
-            [
-                "cayennepeppar",
-                1
-            ],
-            [
-                "havregr\u00e4dde",
-                1
-            ],
-            [
-                "salt",
-                1
-            ],
-            [
-                "svartpeppar",
-                1
-            ],
-            [
-                "rapsolja",
-                1
-            ],
-            [
-                "tomater",
-                1
-            ],
-            [
-                "r\u00f6dl\u00f6k",
-                1
-            ],
-            [
-                "r\u00f6d",
-                1
-            ],
-            [
-                "koriander",
-                1
-            ],
-            [
-                "burk",
-                1
-            ],
-            [
-                "avokado",
-                1
-            ],
-            [
-                "lime",
-                1
-            ],
-            [
-                "vitl\u00f6ksklyfta",
-                1
-            ],
-            [
-                "salt",
-                1
-            ],
-            [
-                "peppar",
-                1
-            ],
-            [
-                "fraiche",
-                1
-            ],
-            [
-                "tacos\u00e5s",
-                1
-            ],
-            [
-                "tortillabr\u00f6d",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/taco-med-majsfritters-och-pico-de-gallo-725965/"
-    },
-    {
-        "title": "Kyckling med syrlig k\u00e5lsallad och sojamajonn\u00e4s",
-        "ingredients": [
-            [
-                "ris",
-                1
-            ],
-            [
-                "lime",
-                1
-            ],
-            [
-                "r\u00e5kostmix",
-                1
-            ],
-            [
-                "olja",
-                1
-            ],
-            [
-                "salt",
-                1
-            ],
-            [
-                "chiliflakes",
-                1
-            ],
-            [
-                "sesamfr\u00f6",
-                1
-            ],
-            [
-                "krasse",
-                1
-            ],
-            [
-                "soja",
-                1
-            ],
-            [
-                "majonn\u00e4s",
-                1
-            ],
-            [
-                "snabbfil\u00e9er",
-                1
-            ],
-            [
-                "olja",
-                1
-            ],
-            [
-                "salt",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/kyckling-med-syrlig-kalsallad-och-sojamajonnas-724150/"
-    },
-    {
-        "title": "Sallad med rostad pumpa, getost och tahinidressing",
-        "ingredients": [
-            [
-                "linser",
-                1
-            ],
-            [
-                "pumpa",
-                1
-            ],
-            [
-                "vitl\u00f6ksklyfta",
-                1
-            ],
-            [
-                "paprikapulver",
-                1
-            ],
-            [
-                "chilipulver",
-                1
-            ],
-            [
-                "rosmarin",
-                1
-            ],
-            [
-                "salt",
-                1
-            ],
-            [
-                "olivolja",
-                1
-            ],
-            [
-                "tahini",
-                1
-            ],
-            [
-                "l\u00f6nnsirap",
-                1
-            ],
-            [
-                "citronjuice",
-                1
-            ],
-            [
-                "vitl\u00f6ksklyfta",
-                1
-            ],
-            [
-                "soja",
-                1
-            ],
-            [
-                "vatten",
-                1
-            ],
-            [
-                "valn\u00f6tter",
-                1
-            ],
-            [
-                "honung",
-                1
-            ],
-            [
-                "svart-",
-                1
-            ],
-            [
-                "citronjuice",
-                1
-            ],
-            [
-                "salt",
-                1
-            ],
-            [
-                "olivolja",
-                1
-            ],
-            [
-                "\u00e4pplen",
-                1
-            ],
-            [
-                "granat\u00e4pple",
-                1
-            ],
-            [
-                "getost",
-                2
-            ]
-        ],
-        "url": "https://www.ica.se/recept/sallad-med-rostad-pumpa-getost-och-tahinidressing-728568/"
-    },
-    {
-        "title": "\u00c4ppelkompott med citron och kardemumma",
-        "ingredients": [
-            [
-                "\u00e4pplen",
-                1
-            ],
-            [
-                "vaniljst\u00e5ng",
-                1
-            ],
-            [
-                "kardemummak\u00e4rnor",
-                1
-            ],
-            [
-                "vatten",
-                1
-            ],
-            [
-                "str\u00f6socker",
-                1
-            ],
-            [
-                "motsvarar",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/appelkompott-med-citron-och-kardemumma-723779/"
-    },
-    {
-        "title": "F\u00f6rf\u00f6riskt goda pilgrimsmusslor",
-        "ingredients": [
-            [
-                "sm\u00f6r",
-                1
-            ],
-            [
-                "soja",
-                1
-            ],
-            [
-                "citronjuice",
-                1
-            ],
-            [
-                "pilgrimsmusslor",
-                2
-            ],
-            [
-                "shiitakesvamp",
-                1
-            ],
-            [
-                "salladsl\u00f6kar",
-                1
-            ],
-            [
-                "rapsolja",
-                1
-            ],
-            [
-                "salt",
-                1
-            ],
-            [
-                "svartpeppar",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/forforiskt-goda-pilgrimsmusslor-630248/"
-    },
-    {
-        "title": "Tacograt\u00e4ng",
-        "ingredients": [
-            [
-                "\u00e4ttiksprit",
-                1
-            ],
-            [
-                "str\u00f6socker",
-                1
-            ],
-            [
-                "vatten",
-                1
-            ],
-            [
-                "r\u00f6dl\u00f6k",
-                1
-            ],
-            [
-                "k\u00f6ttf\u00e4rs",
-                1
-            ],
-            [
-                "sm\u00f6r",
-                1
-            ],
-            [
-                "taco",
-                1
-            ],
-            [
-                "salsas\u00e5s",
-                1
-            ],
-            [
-                "fraiche",
-                1
-            ],
-            [
-                "cheddarost",
-                1
-            ],
-            [
-                "cocktailtomater",
-                1
-            ],
-            [
-                "inlagd",
-                1
-            ],
-            [
-                "nachochips",
-                1
-            ],
-            [
-                "koriander",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/tacogratang-722731/"
-    },
-    {
-        "title": "Saffransl\u00e4ngd med vit choklad",
-        "ingredients": [
-            [
-                "sm\u00f6r",
-                1
-            ],
-            [
-                "mj\u00f6lk",
-                1
-            ],
-            [
-                "j\u00e4st",
-                1
-            ],
-            [
-                "saffran",
-                1
-            ],
-            [
-                "salt",
-                1
-            ],
-            [
-                "socker",
-                1
-            ],
-            [
-                "vetemj\u00f6l",
-                1
-            ],
-            [
-                "sm\u00f6r",
-                1
-            ],
-            [
-                "choklad",
-                2
-            ],
-            [
-                "socker",
-                1
-            ],
-            [
-                "\u00e4gg",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/saffranslangd-med-vit-choklad-276558/"
-    },
-    {
-        "title": "Pizza bianco med skogssvamp och Folke",
-        "ingredients": [
-            [
-                "karljohanssvamp",
-                1
-            ],
-            [
-                "kastanjechampinjoner",
-                1
-            ],
-            [
-                "sm\u00f6r",
-                1
-            ],
-            [
-                "salt",
-                1
-            ],
-            [
-                "vitl\u00f6ksklyfta",
-                1
-            ],
-            [
-                "pizzabottnar",
-                1
-            ],
-            [
-                "fraiche",
-                1
-            ],
-            [
-                "timjan",
-                1
-            ],
-            [
-                "ost",
-                1
-            ],
-            [
-                "hasseln\u00f6tter",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/pizza-bianco-med-skogssvamp-och-folke-722884/"
-    },
-    {
-        "title": "Baked artichoke - varm kron\u00e4rtsskocksdipp",
-        "ingredients": [
-            [
-                "kron\u00e4rtskockshj\u00e4rtan",
-                1
-            ],
-            [
-                "vitl\u00f6ksklyftor",
-                1
-            ],
-            [
-                "paprika",
-                1
-            ],
-            [
-                "inlagd",
-                1
-            ],
-            [
-                "majonn\u00e4s",
-                1
-            ],
-            [
-                "fraiche",
-                1
-            ],
-            [
-                "parmesan",
-                1
-            ],
-            [
-                "basilika",
-                1
-            ],
-            [
-                "basilika",
-                1
-            ],
-            [
-                "salt",
-                1
-            ],
-            [
-                "peppar",
-                1
-            ],
-            [
-                "kex",
-                1
-            ],
-            [
-                "baguette",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/baked-artichoke-varm-kronartsskocksdipp-714006/"
-    },
-    {
-        "title": "Pok\u00e9 bowl med marinerad tonfisk och sojamajonn\u00e4s",
-        "ingredients": [
-            [
-                "ris",
-                1
-            ],
-            [
-                "majonn\u00e4s",
-                1
-            ],
-            [
-                "soja",
-                1
-            ],
-            [
-                "avokado",
-                1
-            ],
-            [
-                "r\u00e4disor",
-                1
-            ],
-            [
-                "koriander",
-                1
-            ],
-            [
-                "sesamfr\u00f6",
-                1
-            ],
-            [
-                "soja",
-                1
-            ],
-            [
-                "motsvarar",
-                1
-            ],
-            [
-                "tonfisk",
-                2
-            ]
-        ],
-        "url": "https://www.ica.se/recept/poke-bowl-med-marinerad-tonfisk-och-sojamajonnas-722664/"
-    },
-    {
-        "title": "Linsgryta med kokosmj\u00f6lk och koriander",
-        "ingredients": [
-            [
-                "ris",
-                1
-            ],
-            [
-                "r\u00f6dl\u00f6k",
-                1
-            ],
-            [
-                "vitl\u00f6ksklyfta",
-                1
-            ],
-            [
-                "chilipulver",
-                1
-            ],
-            [
-                "curry",
-                1
-            ],
-            [
-                "kanel",
-                1
-            ],
-            [
-                "olja",
-                1
-            ],
-            [
-                "linser",
-                1
-            ],
-            [
-                "kokosmj\u00f6lk",
-                2
-            ],
-            [
-                "gr\u00f6nsaksbuljong",
-                1
-            ],
-            [
-                "salladsl\u00f6k",
-                1
-            ],
-            [
-                "k\u00f6rsb\u00e4rstomater",
-                1
-            ],
-            [
-                "koriander",
-                2
-            ],
-            [
-                "salt",
-                1
-            ],
-            [
-                "citron",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/linsgryta-med-kokosmjolk-och-koriander-721469/"
-    },
-    {
-        "title": "Clementincocktail med rosmarin",
-        "ingredients": [
-            [
-                "str\u00f6socker",
-                1
-            ],
-            [
-                "vatten",
-                1
-            ],
-            [
-                "hackad",
-                1
-            ],
-            [
-                "clementinskal",
-                1
-            ],
-            [
-                "clementinjuice",
-                1
-            ],
-            [
-                "limejuice",
-                1
-            ],
-            [
-                "vin",
-                1
-            ],
-            [
-                "rosmarinkvist",
-                1
-            ]
-        ],
-        "url": "https://www.ica.se/recept/clementincocktail-med-rosmarin-723101/"
     }
 ]
