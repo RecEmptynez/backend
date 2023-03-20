@@ -15,7 +15,7 @@ from db.repository.search_ingredient import search_ingredient
 
 router = APIRouter()
 
-@router.post("/")
+@router.post("/ingredient")
 def search_ingredients(search:SearchIngredient, db:Session=Depends(get_db)):
     ingredients = search_ingredient(search, db)
     return ingredients
