@@ -159,10 +159,21 @@ def increase_weight(ingredient,title):
         
     return 1
 
+
+def get_compound_ingredient(ingredient,nlp):
+    doc = nlp(ingredient)
+    for token in doc:
+        print(token.text, token.pos_, token.dep_, token.head.text, token.head.pos_,)
+
 #Main flow of the program
 if __name__ == '__main__':
     #Load the Swedish model
     nlp = spacy.load("sv_core_news_sm")
+
+    test_title  = "Glutenfri vegolasagne med Folke"
+    test_ingredient = "lasagne plattor"
+
+    get_compound_ingredient(test_ingredient,nlp)
     #Generate the ingredients
-    generate_ingredients(nlp)
+    #generate_ingredients(nlp)
     
