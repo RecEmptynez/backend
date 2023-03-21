@@ -4,3 +4,4 @@ env
 .DS_Store
 test_db.db
 geckodriver.log
+ingredients.json
