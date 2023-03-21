@@ -9,7 +9,6 @@ from db.repository.ingredients import create_new_ingredients
 from db.repository.recipe_ingredient import couple_recipe_ingredient
 from db.repository.search import search_recipe
 from typing import List
-from db.schemas.search import SearchResult
 from db.schemas.search_ingredient import SearchIngredient, SearchIngredientResult
 from db.repository.search_ingredient import search_ingredient
 

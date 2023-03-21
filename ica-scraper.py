@@ -6,6 +6,7 @@ from selenium import webdriver
 from selenium.webdriver.support.select import Select
 from selenium.webdriver.common.by import By
 from time import sleep
+from lxml import etree
 #******************************
 #Must run python -m spacy download sv_core_news_sm
 #******************************
@@ -110,7 +111,29 @@ def generate_ingredients(nlp):
         
         #Extract the title
         title = soup.find("h1", {"class": "recipe-header__title"}).text.strip()
+        
+        #difficulty = soup.find("a", {"class": "items"}).find_next_sibling("a", {"class": "items"}).text.strip()
+        
+        dom = etree.HTML(str(soup))
 
+        xpath = ["/html/body/div[1]/div/div[2]/div/div/div[1]/div[1]/div[1]/div[3]/a[3]/text()", 
+                 "/html/body/div[1]/div/div[2]/div/div/div[1]/div[1]/div/div[3]/a[2]/text()"]
+        difficulty = []
+
+
+        for path in xpath:
+            difficulty = dom.xpath(path)
+            if difficulty != []:
+                break
+        
+        if difficulty == []:
+            difficulty.append("N/A")
+
+
+        #difficulty = soup.select('//*[@id="page-wrapper"]/div/div/div[1]/div[1]/div/div[3]/a[2]/text()')
+
+        difficulty = difficulty[0]
+        
         #Add the title to the ingredients list
         for ingredient in ingredients_html:
             ingredient = ingredient.text.strip()
@@ -122,6 +145,7 @@ def generate_ingredients(nlp):
             "title": title,
             "ingredients": recipe_ingredients_list,
             "url": link,
+            "difficulty": difficulty
         }
 
         # Add the recipe to the list of recipes
