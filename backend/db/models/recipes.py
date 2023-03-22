@@ -8,4 +8,5 @@ class Recipe(Base):
     id = Column(Integer,primary_key = True,autoincrement=True, index=True)
     title = Column(String,nullable= False)
     url = Column(String,nullable= False)
+    difficulty = Column(String, nullable=False)
 

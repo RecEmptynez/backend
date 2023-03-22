@@ -7,12 +7,14 @@ class RecipeCreate(BaseModel):
     title : str
     url : str
     ingredients: List[str]
+    difficulty: str
 
 class ShowRecipe(BaseModel):
     title : str
     id : int
     url : str
     ingredients: List[str]
+    difficulty: str
 
     class Config():  #tells pydantic to convert even non dict obj to json
         orm_mode = True
@@ -34,6 +36,6 @@ class ShowDeletedRecipe(BaseModel):
     title : str
     id : int
     url: str
-    
+    difficulty: str    
     class Config():  #tells pydantic to convert even non dict obj to json
         orm_mode = True
