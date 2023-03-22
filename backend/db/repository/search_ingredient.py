@@ -10,6 +10,7 @@ from sqlalchemy import Delete, Insert, Select, Join, distinct
 from db.schemas.search import SearchResult
 
 
+
 def search_ingredient(search_ingredient:SearchIngredient , db:Session):
     search_str = search_ingredient.ingredient_string
     stmt = Select(Ingredient.title).where(Ingredient.title.like(f'{search_str}%'))
