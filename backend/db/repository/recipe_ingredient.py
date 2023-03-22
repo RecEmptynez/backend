@@ -9,10 +9,10 @@ from sqlalchemy import Select, func
 from db.schemas.recipes import MultRecipesShow,ShowRecipe
 from db.repository.ingredients import ingredient_in_database,get_ingredient_by_title
 
-def couple_recipe_ingredient(recipe:ShowRecipe, importance:int, db:Session):
-    ingredients = [get_ingredient_by_title(ingredient,db).id for ingredient in recipe.ingredients]
-    for ingredient_id in ingredients:    
-        db_recipe_ingredient = Recipe_ingredient(recipe_id=recipe.id, ingredient_id=ingredient_id, importance=importance)
+def couple_recipe_ingredient(recipe:ShowRecipe,db:Session):
+    ingredients = [(get_ingredient_by_title(ingredient[0],db).id,ingredient[1]) for ingredient in recipe.ingredients]
+    for ingredient in ingredients:    
+        db_recipe_ingredient = Recipe_ingredient(recipe_id=recipe.id, ingredient_id=ingredient[0], importance=ingredient[1])
         db.add(db_recipe_ingredient)
         db.commit()
         db.refresh(db_recipe_ingredient)

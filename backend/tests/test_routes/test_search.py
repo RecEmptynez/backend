@@ -5,9 +5,8 @@ def test_search(client):
     title1 = "recipe_title"
     url1 = "recipe_url.com"
     ingredients1 = [
-        "ingredient",
-        "ingredient_22",
-        "ingredient_33"
+        ["ingredient_1", "2"],
+        ["ingredient_2", "1"]
     ]
     data = json.dumps(
         {
@@ -27,4 +26,4 @@ def test_search(client):
 
     response = client.post("/search/recipes", data=search)
     assert response.status_code == 200
-    assert response.json()["recipe_names"][title1] == [3,3]
+    assert response.json()["recipe_names"][title1] == [1,2]
