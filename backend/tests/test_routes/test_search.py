@@ -9,11 +9,13 @@ def test_search(client):
         "ingredient_22",
         "ingredient_33"
     ]
+    difficulty = "medel"
     data = json.dumps(
         {
             "title": title1,
             "url": url1,
-            "ingredients": ingredients1
+            "ingredients": ingredients1,
+            "difficulty": difficulty
         }
     )
     response = client.post("/recipes/create_recipe", data=data)
