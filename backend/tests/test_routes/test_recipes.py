@@ -4,8 +4,8 @@ def test_delete_recipe(client):
     title = "recipe_title"
     url = "recipe_url.com"
     ingredients = [
-        "ingredient_1",
-        "ingredient_2"
+        ["ingredient_1", "2"],
+        ["ingredient_2", "1"]
     ]
 
     data = json.dumps(
@@ -32,8 +32,8 @@ def test_create_recipe(client):
     title = "recipe_title"
     url = "recipe_url.com"
     ingredients = [
-        "ingredient_1",
-        "ingredient_2"
+        ["ingredient_1", "2"],
+        ["ingredient_2", "1"]
     ]
 
     data = json.dumps(
@@ -55,14 +55,14 @@ def test_create_mult_recipes(client):
     title1 = "recipe_title"
     url1 = "recipe_url.com"
     ingredients1 = [
-        "ingredient_1",
-        "ingredient_2"
+        ["ingredient_1", "2"],
+        ["ingredient_2", "1"]
     ]
     title2 = "recipe_title2"
     url2 = "recipe_url2.com"
     ingredients2 = [
-        "ingredient_3",
-        "ingredient_4"
+        ["ingredient_3", "2"],
+        ["ingredient_4", "1"]
     ]
 
     data = json.dumps(

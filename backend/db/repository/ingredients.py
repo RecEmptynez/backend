@@ -11,9 +11,10 @@ from db.schemas.recipes import MultRecipesShow
 from db.models.categories import Category
 
 #inserts ingredients into the database and couples them with a category TODO implement categories
-def create_new_ingredients(ingredient_titles:List[str],db:Session):
+def create_new_ingredients(ingredient_titles:List[List[str]],db:Session):
     ingredients = []
-    for ingredient_title in ingredient_titles:
+    for ingredient_info in ingredient_titles:
+        ingredient_title = ingredient_info[0]
         if ingredient_in_database(ingredient_title,db):
             select_stmt = Select(Ingredient).where(Ingredient.title == ingredient_title)
             result = db.execute(select_stmt).fetchall()

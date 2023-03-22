@@ -6,6 +6,7 @@ from selenium import webdriver
 from selenium.webdriver.support.select import Select
 from selenium.webdriver.common.by import By
 from time import sleep
+import re
 #******************************
 #Must run python -m spacy download sv_core_news_sm
 #******************************
@@ -47,7 +48,7 @@ def generate_ingredients(nlp):
 
     #number of epochs we want to run the script, 1 generates about 10 recipes, to high runtime could cause crashes
     # 500 took about 40 minutes to run the whole script
-    runtime = 5
+    runtime = 2
 
     #paths to the elements we want to click
     xpath_cookie = "//button[contains(text(), 'Godkänn kakor')]"
@@ -86,7 +87,7 @@ def generate_ingredients(nlp):
     for link in cards:
         links.append(link.get_attribute("href"))
     print("completed gathering links")
-    print("number of links gathered: "+str(len(links)))
+    print("number of links gathered: ",len(links))
     #Initialize the recipes list
     recipes_list = []
     
@@ -96,8 +97,8 @@ def generate_ingredients(nlp):
     #Loop through the links and get the ingredients
     for i,link in enumerate(links):
         
-        #Initialize the ingredients list
-        recipe_ingredients_list = []
+        #Initialize the ingredients set
+        recipe_ingredients_set = []
 
         #Get the recipe page
         soup = BeautifulSoup(requests.get(link).text, "html.parser")
@@ -111,16 +112,17 @@ def generate_ingredients(nlp):
         #Extract the title
         title = soup.find("h1", {"class": "recipe-header__title"}).text.strip()
 
-        #Add the title to the ingredients list
+        #Add the title to the ingredients set
         for ingredient in ingredients_html:
             ingredient = ingredient.text.strip()
             ingredient = get_ingredient(ingredient,nlp)
-            recipe_ingredients_list.append(ingredient+"\n")
+            weight = increase_weight(ingredient,title)
+            recipe_ingredients_set.append([ingredient,weight])
     
         #Create json dictionary for this recipe
         recipe_json = {
             "title": title,
-            "ingredients": recipe_ingredients_list,
+            "ingredients": recipe_ingredients_set,
             "url": link,
         }
 
@@ -131,6 +133,20 @@ def generate_ingredients(nlp):
     with open("ingredients.json", "w", encoding='utf-8') as f:
         json.dump(recipes_list, f, indent=4)
 
+
+def increase_weight(ingredient,title):
+    if ingredient == '+':
+        return "1"
+    if re.search(ingredient,title) != None:
+        return "2"
+    if re.search(ingredient[0:-2],title) != None and len(ingredient[0:-2]) > 3:
+        return "2"
+    
+    for word in title.split():
+        if re.search(word.strip().lower(),ingredient) != None:
+            return "2"
+        
+    return "1"
 
 #Main flow of the program
 if __name__ == '__main__':

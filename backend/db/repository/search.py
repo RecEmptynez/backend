@@ -15,7 +15,6 @@ def search_recipe(search:Search,db:Session):
     limit = 100
     # create the dynamic WHERE clause
     where_clause = or_(*[Ingredient.title.ilike(f'%{search_term}%') for search_term in search.ingredient_names])
-    stmt = Select(distinct(Recipe.title), Recipe.id, func.count(distinct(Recipe_ingredient.ingredient_id)).label('ingredient_count')).select_from(Recipe).join(Recipe_ingredient, Recipe.id == Recipe_ingredient.recipe_id).join(Ingredient, Ingredient.id == Recipe_ingredient.ingredient_id).where(where_clause).group_by(Recipe.title, Recipe.id).order_by(desc('ingredient_count')).limit(limit)
+    stmt = Select(distinct(Recipe.title), Recipe.id, func.count(distinct(Recipe_ingredient.ingredient_id)).label('ingredient_count'), (Recipe_ingredient.importance*func.count(distinct(Recipe_ingredient.ingredient_id))).label("sorting")).select_from(Recipe).join(Recipe_ingredient, Recipe.id == Recipe_ingredient.recipe_id).join(Ingredient, Ingredient.id == Recipe_ingredient.ingredient_id).where(where_clause).group_by(Recipe.title, Recipe.id, Recipe_ingredient.importance).order_by(desc('sorting')).limit(limit)
     result = db.execute(stmt).fetchall()
-
     return SearchResult(recipe_names={recipe[0]: [recipe[2],get_num_ingredients(recipe[1],db)] for recipe in result})
