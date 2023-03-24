@@ -8,7 +8,7 @@ from db.models.ingredients import Ingredient
 from db.models.recipe_ingredient import Recipe_ingredient
 from sqlalchemy import Delete, Insert, Select, Join, distinct
 from db.schemas.search import SearchResult
-#from models.ingredients import Ingredient
+
 
 
 def search_ingredient(search_ingredient:SearchIngredient , db:Session):
