@@ -6,12 +6,14 @@ from pydantic import BaseModel,EmailStr,Extra
 class RecipeCreate(BaseModel):
     title : str
     url : str
+    difficulty: str
     ingredients: List[List[str]]
 
 class ShowRecipe(BaseModel):
     title : str
     id : int
     url : str
+    difficulty: str
     ingredients: List[List[str]]
 
     class Config():  #tells pydantic to convert even non dict obj to json
@@ -33,6 +35,6 @@ class ShowDeletedRecipe(BaseModel):
     title : str
     id : int
     url: str
-    
+    difficulty: str    
     class Config():  #tells pydantic to convert even non dict obj to json
         orm_mode = True
