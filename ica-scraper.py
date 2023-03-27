@@ -143,7 +143,6 @@ def generate_ingredients(nlp):
         
         picture_url = dom.xpath(xpath_picture)
         picture_url = picture_url[0]
-        print(picture_url)
 
 
         #Add the title to the ingredients set
@@ -158,8 +157,8 @@ def generate_ingredients(nlp):
             "title": title,
             "ingredients": recipe_ingredients_set,
             "url": link,
-            "picture-url": picture_url,
-            "difficulty": difficulty, 
+            "picture_url": picture_url,
+            "difficulty": difficulty.strip(), 
             "rating": rating
         }
 
