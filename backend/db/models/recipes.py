@@ -9,4 +9,5 @@ class Recipe(Base):
     title = Column(String,nullable= False)
     url = Column(String,nullable= False)
     difficulty = Column(String, nullable=False)
-
+    picture_url = Column(String,nullable= False)
+    rating = Column(String,nullable= False)

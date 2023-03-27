@@ -7,6 +7,8 @@ class RecipeCreate(BaseModel):
     title : str
     url : str
     difficulty: str
+    picture_url: str
+    rating: str
     ingredients: List[List[str]]
 
 class ShowRecipe(BaseModel):
