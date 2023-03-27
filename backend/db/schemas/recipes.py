@@ -16,6 +16,8 @@ class ShowRecipe(BaseModel):
     id : int
     url : str
     difficulty: str
+    picture_url: str
+    rating: str
     ingredients: List[List[str]]
 
     class Config():  #tells pydantic to convert even non dict obj to json
