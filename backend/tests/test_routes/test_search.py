@@ -26,7 +26,7 @@ def test_search(client):
     # search for the recipe
     search = json.dumps(
     {
-        "count": count,
+        "max_num": count,
         "ingredient_names": [
         "ingredient"
         ]

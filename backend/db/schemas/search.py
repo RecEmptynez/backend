@@ -2,7 +2,7 @@ from pydantic import BaseModel
 from typing import List,Any
 
 class Search(BaseModel):
-    count : int
+    max_num : int
     ingredient_names: List[str]
 
 class SearchResult(BaseModel):
