@@ -130,6 +130,14 @@ def generate_ingredients(nlp):
         else:
             difficulty = difficulty[0]
 
+        if difficulty == " Enkel":
+            difficulty = "0"
+        elif difficulty == " Medel":
+            difficulty = "1"
+        elif difficulty == " Avancerad":
+            difficulty = "2"
+            
+    
 
         #extracting rating:
         xpath_rating = "/html/body/div[1]/div/div[2]/div/div/div[1]/div[1]/div/div[1]/div/div/div/div/div/div/span[6]/text()"
@@ -158,7 +166,7 @@ def generate_ingredients(nlp):
             "ingredients": recipe_ingredients_set,
             "url": link,
             "picture_url": picture_url,
-            "difficulty": difficulty.strip(), 
+            "difficulty": difficulty, 
             "rating": rating
         }
 
