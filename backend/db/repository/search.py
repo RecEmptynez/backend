@@ -15,6 +15,36 @@ def search_recipe(search:Search,db:Session):
     limit = search.max_num
     # create the dynamic WHERE clause
     where_clause = or_(*[Ingredient.title.ilike(f'%{search_term}%') for search_term in search.ingredient_names])
-    stmt = Select(distinct(Recipe.title), Recipe.id, Recipe.url, Recipe.picture_url, Recipe.difficulty, Recipe.rating, func.count(distinct(Recipe_ingredient.ingredient_id)).label('ingredient_count'), (Recipe_ingredient.importance*func.count(distinct(Recipe_ingredient.ingredient_id))).label("sorting")).select_from(Recipe).join(Recipe_ingredient, Recipe.id == Recipe_ingredient.recipe_id).join(Ingredient, Ingredient.id == Recipe_ingredient.ingredient_id).where(where_clause).group_by(Recipe.title, Recipe.id, Recipe.url, Recipe_ingredient.importance, Recipe.picture_url, Recipe.difficulty, Recipe.rating).order_by(desc('sorting')).limit(limit)
+    
+    count_function = func.count(distinct(Recipe_ingredient.ingredient_id))
+    sorting_function = (Recipe_ingredient.importance*func.count(distinct(Recipe_ingredient.ingredient_id)))
+
+    stmt = Select(
+                    distinct(Recipe.title), 
+                    Recipe.id, 
+                    Recipe.url, 
+                    Recipe.picture_url, 
+                    Recipe.difficulty, 
+                    Recipe.rating, 
+                    count_function.label('ingredient_count'), 
+                    sorting_function.label("sorting")).select_from(Recipe).join(
+                        Recipe_ingredient, 
+                        Recipe.id == Recipe_ingredient.recipe_id).join(
+                        Ingredient, 
+                        Ingredient.id == Recipe_ingredient.ingredient_id).where(where_clause).group_by(
+                            Recipe.title, 
+                            Recipe.id, 
+                            Recipe.url, 
+                            Recipe_ingredient.importance, 
+                            Recipe.picture_url, 
+                            Recipe.difficulty, 
+                            Recipe.rating).order_by(desc('sorting')).limit(limit)
+    
     result = db.execute(stmt).fetchall()
-    return SearchResult(recipe_names={recipe[0]: {"owned":recipe[6] if search.ingredient_names else 0 ,"total":get_num_ingredients(recipe[1],db),"url":recipe[2], "picture_url":recipe[3], "difficulty":int(recipe[4]), "rating":float(recipe[5])} for recipe in result})
+    return SearchResult(recipe_names={recipe[0]: 
+                                      {"owned":recipe[6] if search.ingredient_names else 0 ,
+                                       "total":get_num_ingredients(recipe[1],db),"url":recipe[2], 
+                                       "picture_url":recipe[3], 
+                                       "difficulty":int(recipe[4]), 
+                                       "rating":float(recipe[5])} 
+                                       for recipe in result})
