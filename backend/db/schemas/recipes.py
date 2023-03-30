@@ -1,5 +1,5 @@
-from typing import Optional, List
-from pydantic import BaseModel,EmailStr,Extra
+from typing import List
+from pydantic import BaseModel
 
 
 #properties required during user creation
@@ -7,6 +7,8 @@ class RecipeCreate(BaseModel):
     title : str
     url : str
     difficulty: str
+    picture_url: str
+    rating: str
     ingredients: List[List[str]]
 
 class ShowRecipe(BaseModel):
@@ -14,6 +16,8 @@ class ShowRecipe(BaseModel):
     id : int
     url : str
     difficulty: str
+    picture_url: str
+    rating: str
     ingredients: List[List[str]]
 
     class Config():  #tells pydantic to convert even non dict obj to json

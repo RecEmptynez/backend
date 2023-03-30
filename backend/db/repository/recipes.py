@@ -1,17 +1,16 @@
 from sqlalchemy.orm import Session
 from db.schemas.recipes import RecipeCreate,DeleteRecipe,ShowDeletedRecipe,ShowRecipe
 from db.models.recipes import Recipe
-from db.models.categories import Category
-from sqlalchemy import Delete, Insert
+from sqlalchemy import Delete
 
 #creates a new recipe and returns it
 def create_new_recipe(recipe:RecipeCreate,db:Session):
     #Create the recipe:
-    db_recipe = Recipe(title=recipe.title, url=recipe.url, difficulty=recipe.difficulty)    
+    db_recipe = Recipe(title=recipe.title, url=recipe.url, difficulty=recipe.difficulty, rating=recipe.rating, picture_url=recipe.picture_url)    
     db.add(db_recipe)
     db.commit() #commit gives the recipe an id
     db.refresh(db_recipe)
-    return ShowRecipe(id=db_recipe.id,title=db_recipe.title,url=db_recipe.url,ingredients=recipe.ingredients, difficulty=recipe.difficulty)
+    return ShowRecipe(id=db_recipe.id,title=db_recipe.title,url=db_recipe.url,ingredients=recipe.ingredients, difficulty=recipe.difficulty, rating=recipe.rating, picture_url=recipe.picture_url)
 
 def recipe_delete(recipe:DeleteRecipe,db:Session):
     delete_stmt = Delete(Recipe).where(Recipe.id == recipe.id).returning(Recipe)

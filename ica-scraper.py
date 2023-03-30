@@ -113,27 +113,61 @@ def generate_ingredients(nlp):
         #Extract the title
         title = soup.find("h1", {"class": "recipe-header__title"}).text.strip()
         
-        #difficulty = soup.find("a", {"class": "items"}).find_next_sibling("a", {"class": "items"}).text.strip()
-        
+
+        #Extract the difficulty
         dom = etree.HTML(str(soup))
 
-        xpath = ["/html/body/div[1]/div/div[2]/div/div/div[1]/div[1]/div[1]/div[3]/a[3]/text()", 
+        xpath_difficulty = ["/html/body/div[1]/div/div[2]/div/div/div[1]/div[1]/div[1]/div[3]/a[3]/text()", 
                  "/html/body/div[1]/div/div[2]/div/div/div[1]/div[1]/div/div[3]/a[2]/text()"]
+        
         difficulty = []
+        for xpath in xpath_difficulty:
+            difficulty = dom.xpath(xpath)
+            if difficulty != []:
+                break
+        if difficulty == []:
+            difficulty = "N/A"
+        else:
+            difficulty = difficulty[0]
+
+        if difficulty == " Enkel":
+            difficulty = "0"
+        elif difficulty == " Medel":
+            difficulty = "1"
+        elif difficulty == " Avancerad":
+            difficulty = "2"
+            
+    
+
+        #extracting rating:
+        xpath_rating = "/html/body/div[1]/div/div[2]/div/div/div[1]/div[1]/div/div[1]/div/div/div/div/div/div/span[6]/text()"
+        rating = dom.xpath(xpath_rating)
+        rating = rating[0][6:9]
+        if rating[1] == " ":
+            rating = rating[0]
+
+        #extracting picture-url
+        xpath_picture = "/html/body/div[1]/div/div[2]/div/div/div[1]/div[2]/div/div/img/@src"
+        
+        picture_url = dom.xpath(xpath_picture)
+        picture_url = picture_url[0]
+
 
         #Add the title to the ingredients set
         for ingredient in ingredients_html:
             ingredient = ingredient.text.strip()
             ingredient = get_ingredient(ingredient,nlp)
             weight = increase_weight(ingredient,title)
-            recipe_ingredients_set.append([ingredient,weight])
-    
+            recipe_ingredients_set.append([ingredient,weight])        
+
         #Create json dictionary for this recipe
         recipe_json = {
             "title": title,
             "ingredients": recipe_ingredients_set,
             "url": link,
-            "difficulty": difficulty
+            "picture_url": picture_url,
+            "difficulty": difficulty, 
+            "rating": rating
         }
 
         # Add the recipe to the list of recipes
