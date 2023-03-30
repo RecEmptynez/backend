@@ -16,5 +16,12 @@ class Settings:
     POSTGRES_PORT : str = os.getenv("POSTGRES_PORT",5432) # default postgres port is 5432
     POSTGRES_DB : str = os.getenv("POSTGRES_DB","tdd")
     DATABASE_URL = f"postgresql://{POSTGRES_USER}:{POSTGRES_PASSWORD}@{POSTGRES_SERVER}:{POSTGRES_PORT}/{POSTGRES_DB}"
+    #Use Environment Variables to connect to a remote database
+    HOST_USER : str = os.getenv("NEON_USER")
+    HOST_PASSWORD : str = os.getenv("NEON_PASSWORD")
+    HOST_SERVER : str = os.getenv("NEON_HOST")
+    HOST_PASSWORD : str = os.getenv("NEON_PASSWORD")
+    HOST_DB : str = os.getenv("NEON_DB")
+    HOST_URL : str = f'postgresql://{HOST_USER}:{HOST_PASSWORD}@{HOST_SERVER}/{HOST_DB}'
 
 settings = Settings()
