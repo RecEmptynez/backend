@@ -1,13 +1,8 @@
 from sqlalchemy.orm import Session
-from typing import List
-from db.schemas.recipes import RecipeCreate,MultRecipesCreate,DeleteRecipe,ShowDeletedRecipe
-from db.models.recipes import Recipe
 from db.models.recipe_ingredient import Recipe_ingredient
-from db.models.ingredients import Ingredient
-from sqlalchemy import Delete
 from sqlalchemy import Select, func
-from db.schemas.recipes import MultRecipesShow,ShowRecipe
-from db.repository.ingredients import ingredient_in_database,get_ingredient_by_title
+from db.schemas.recipes import ShowRecipe
+from db.repository.ingredients import get_ingredient_by_title
 
 def couple_recipe_ingredient(recipe:ShowRecipe,db:Session):
     ingredients = [(get_ingredient_by_title(ingredient[0],db).id,ingredient[1]) for ingredient in recipe.ingredients]

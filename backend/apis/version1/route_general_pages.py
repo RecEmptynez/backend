@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 from fastapi import Request
-from fastapi.responses import HTMLResponse,RedirectResponse
+from fastapi.responses import RedirectResponse
 
 #Router
 general_pages_router = APIRouter()

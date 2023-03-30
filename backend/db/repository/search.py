@@ -1,14 +1,11 @@
 from sqlalchemy.orm import Session
-from db.schemas.recipes import RecipeCreate,DeleteRecipe,ShowDeletedRecipe,ShowRecipe
 from db.models.recipes import Recipe
 from db.schemas.search import Search
-from db.models.categories import Category
 from db.models.ingredients import Ingredient
 from db.models.recipe_ingredient import Recipe_ingredient
-from sqlalchemy import Delete, Insert, Select, Join, distinct, desc, or_, text
+from sqlalchemy import Select, distinct, desc, or_
 from db.schemas.search import SearchResult
 from db.repository.recipe_ingredient import get_num_ingredients
-import re
 from sqlalchemy import func
 
 def search_recipe(search:Search,db:Session):

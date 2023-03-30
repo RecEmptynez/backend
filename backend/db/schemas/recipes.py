@@ -1,5 +1,5 @@
-from typing import Optional, List
-from pydantic import BaseModel,EmailStr,Extra
+from typing import List
+from pydantic import BaseModel
 
 
 #properties required during user creation
