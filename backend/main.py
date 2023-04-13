@@ -6,7 +6,7 @@ from db.Base import Base
 from fastapi.middleware.cors import CORSMiddleware
 
 origins = [
-    "http://localhost:3000",
+    "https://recemptynez.web.app",
 ]
 
 def create_tables():  

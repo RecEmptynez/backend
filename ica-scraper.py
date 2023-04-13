@@ -157,6 +157,7 @@ def generate_ingredients(nlp):
         for ingredient in ingredients_html:
             ingredient = ingredient.text.strip()
             ingredient = get_ingredient(ingredient,nlp)
+            
             weight = increase_weight(ingredient,title)
             recipe_ingredients_set.append([ingredient,weight])        
 

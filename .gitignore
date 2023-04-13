@@ -5,3 +5,4 @@ env
 test_db.db
 geckodriver.log
 ingredients.json
+.space

@@ -1,0 +1,10 @@
+.env
+env
+.github
+.pytest_cache
+.gitignore
+CONTRIBUTING.md
+ica-scraper.py
+README.md
+test_db.db
+__pycache__

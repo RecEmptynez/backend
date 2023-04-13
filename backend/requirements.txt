@@ -1,0 +1,27 @@
+fastapi==0.85
+uvicorn
+beautifulsoup4
+spacy
+#for database   
+sqlalchemy         
+psycopg2-binary
+
+
+#for loading environment variables  
+python-dotenv
+
+pydantic[email]
+
+passlib[bcrypt]
+
+#for testing     
+pytest
+requests
+httpx
+
+
+#for webscraping
+selenium
+bs4
+html-to-json
+lxml
