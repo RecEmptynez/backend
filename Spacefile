@@ -1,0 +1,36 @@
+# Spacefile Docs: https://go.deta.dev/docs/spacefile/v0
+v: 0
+micros:
+  - name: backend
+    src: backend
+    engine: python3.9
+    primary: true
+    presets:
+      env: 
+        - name: NEON_USER
+          description: none
+          default: "user"
+        - name: NEON_PASSWORD
+          description: none
+          default: "S5YljKzDo9EI"
+        - name: NEON_HOST
+          description: none
+          default: "ep-weathered-fire-101350.eu-central-1.aws.neon.tech"
+        - name: NEON_DB
+          description: none
+          default: "test_db"
+        - name: POSTGRES_USER
+          description: none
+          default: "user"
+        - name: POSTGRES_PASSWORD
+          description: none
+          default: "S5YljKzerf9EI"
+        - name: POSTGRES_SERVER
+          description: none
+          default: "ep-weathered-fire-101350.eu-central-1.aws.neon.tech"
+        - name: POSTGRES_PORT
+          description: none
+          default: "test_db"
+        - name: POSTGRES_DB
+          description: none
+          default: "test_db_3"
