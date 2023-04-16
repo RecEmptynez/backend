@@ -115,7 +115,7 @@ def generate_ingredients(nlp):
         try:
             title = soup.find("h1", {"class": "recipe-header__title"}).text
         except:
-            title = "N/A"
+            pass
 
         #Extract the difficulty
         dom = etree.HTML(str(soup))
