@@ -49,7 +49,7 @@ def generate_ingredients(nlp):
 
     #number of epochs we want to run the script, 1 generates about 10 recipes, to high runtime could cause crashes
     # 500 took about 40 minutes to run the whole script
-    runtime = 2
+    runtime = 500
 
     #paths to the elements we want to click
     xpath_cookie = "//button[contains(text(), 'Godkänn kakor')]"
@@ -97,7 +97,8 @@ def generate_ingredients(nlp):
     
     #Loop through the links and get the ingredients
     for i,link in enumerate(links):
-        
+        print(link)
+
         #Initialize the ingredients set
         recipe_ingredients_set = []
 
@@ -111,7 +112,7 @@ def generate_ingredients(nlp):
         ingredients_html = soup.find_all("span", {"class": "ingredients-list-group__card__ingr"})
         
         #Extract the title
-        title = soup.find("h1", {"class": "recipe-header__title"}).text.strip()
+        title = soup.find("h1", {"class": "recipe-header__title"})
         
 
         #Extract the difficulty
@@ -140,25 +141,34 @@ def generate_ingredients(nlp):
     
 
         #extracting rating:
+        
         xpath_rating = "/html/body/div[1]/div/div[2]/div/div/div[1]/div[1]/div/div[1]/div/div/div/div/div/div/span[6]/text()"
         rating = dom.xpath(xpath_rating)
-        rating = rating[0][6:9]
-        if rating[1] == " ":
-            rating = rating[0]
-
+        try:
+            rating = rating[0][6:9]
+            if rating[1] == " ":
+                rating = rating[0]
+        except:
+            rating = "N/A"
         #extracting picture-url
         xpath_picture = "/html/body/div[1]/div/div[2]/div/div/div[1]/div[2]/div/div/img/@src"
         
-        picture_url = dom.xpath(xpath_picture)
-        picture_url = picture_url[0]
-
-
+        try :
+            picture_url = dom.xpath(xpath_picture)
+            picture_url = picture_url[0]
+        except:
+            picture_url = ""
+            
         #Add the title to the ingredients set
         for ingredient in ingredients_html:
             ingredient = ingredient.text.strip()
             ingredient = get_ingredient(ingredient,nlp)
-            weight = increase_weight(ingredient,title)
-            recipe_ingredients_set.append([ingredient,weight])        
+            try: 
+                weight = increase_weight(ingredient,title)
+            except:
+                weight = "1"
+            recipe_ingredients_set.append([ingredient,weight])
+             
 
         #Create json dictionary for this recipe
         recipe_json = {
