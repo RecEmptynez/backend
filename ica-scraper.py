@@ -49,7 +49,7 @@ def generate_ingredients(nlp):
 
     #number of epochs we want to run the script, 1 generates about 10 recipes, to high runtime could cause crashes
     # 500 took about 40 minutes to run the whole script
-    runtime = 2
+    runtime = 500
 
     #paths to the elements we want to click
     xpath_cookie = "//button[contains(text(), 'Godkänn kakor')]"
@@ -115,6 +115,7 @@ def generate_ingredients(nlp):
         try:
             title = soup.find("h1", {"class": "recipe-header__title"}).text
         except:
+            print("skipped recipe, no title")
             pass
 
         #Extract the difficulty
