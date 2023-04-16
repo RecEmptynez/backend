@@ -49,7 +49,7 @@ def generate_ingredients(nlp):
 
     #number of epochs we want to run the script, 1 generates about 10 recipes, to high runtime could cause crashes
     # 500 took about 40 minutes to run the whole script
-    runtime = 500
+    runtime = 2
 
     #paths to the elements we want to click
     xpath_cookie = "//button[contains(text(), 'Godkänn kakor')]"
@@ -93,11 +93,11 @@ def generate_ingredients(nlp):
     recipes_list = []
     
     #Print the progress bar
-    printProgressBar(0, len(links), prefix = 'Scraping:', suffix = 'Complete', length = 50)
-    
+    #printProgressBar(0, len(links), prefix = 'Scraping:', suffix = 'Complete', length = 50)
+    print("looping through links")
     #Loop through the links and get the ingredients
     for i,link in enumerate(links):
-        print(link)
+        #print(link)
 
         #Initialize the ingredients set
         recipe_ingredients_set = []
@@ -106,14 +106,16 @@ def generate_ingredients(nlp):
         soup = BeautifulSoup(requests.get(link).text, "html.parser")
         
         #Print the progress bar
-        printProgressBar(i + 1, len(links), prefix = 'Scraping:', suffix = 'Complete', length = 50)
+        #printProgressBar(i + 1, len(links), prefix = 'Scraping:', suffix = 'Complete', length = 50)
         
         #Get HTML for ingredients
         ingredients_html = soup.find_all("span", {"class": "ingredients-list-group__card__ingr"})
         
         #Extract the title
-        title = soup.find("h1", {"class": "recipe-header__title"})
-        
+        try:
+            title = soup.find("h1", {"class": "recipe-header__title"}).text
+        except:
+            title = "N/A"
 
         #Extract the difficulty
         dom = etree.HTML(str(soup))
@@ -182,6 +184,7 @@ def generate_ingredients(nlp):
 
         # Add the recipe to the list of recipes
         recipes_list.append(recipe_json)
+    print("completed scraping")
 
     #Write the ingredients to a file
     with open("ingredients.json", "w", encoding='utf-8') as f:
