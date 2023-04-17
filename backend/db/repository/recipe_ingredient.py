@@ -9,8 +9,7 @@ def couple_recipe_ingredient(recipe:ShowRecipe,db:Session):
     for ingredient in ingredients:    
         db_recipe_ingredient = Recipe_ingredient(recipe_id=recipe.id, ingredient_id=ingredient[0], importance=ingredient[1])
         db.add(db_recipe_ingredient)
-        db.commit()
-        db.refresh(db_recipe_ingredient)
+    db.commit()
     return db_recipe_ingredient
 
 # Gets all the ingredients from a recipe

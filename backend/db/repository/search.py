@@ -12,7 +12,6 @@ def search_recipe(search:Search,db:Session):
     limit = search.max_num
     # create the dynamic WHERE clause
     where_clause = or_(*[Ingredient.title.ilike(f'%{search_term}%') for search_term in search.ingredient_names])
-    
     count_function = func.count(distinct(Recipe_ingredient.ingredient_id))
     sorting_function = (Recipe_ingredient.importance*func.count(distinct(Recipe_ingredient.ingredient_id)))
 
@@ -42,6 +41,6 @@ def search_recipe(search:Search,db:Session):
                                       {"owned":recipe[6] if search.ingredient_names else 0 ,
                                        "total":get_num_ingredients(recipe[1],db),"url":recipe[2], 
                                        "picture_url":recipe[3], 
-                                       "difficulty":int(recipe[4]), 
+                                       "difficulty": int(recipe[4]) if recipe[4] != "N/A" else -1, 
                                        "rating":float(recipe[5])} 
                                        for recipe in result})

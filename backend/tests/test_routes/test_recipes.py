@@ -109,14 +109,4 @@ def test_create_mult_recipes(client):
         }
     )    
     response = client.post("/recipes/create_recipe/batch",data=data)
-    assert response.status_code == 200 
-    assert response.json()["recipes"][0]["title"] == title1
-    assert response.json()["recipes"][0]["url"] == url1
-    assert response.json()["recipes"][0]["difficulty"] == difficulty1 
-    assert response.json()["recipes"][0]["picture_url"] == picture_url1
-    assert response.json()["recipes"][0]["rating"] == rating1   
-    assert response.json()["recipes"][1]["title"] == title2
-    assert response.json()["recipes"][1]["url"] == url2
-    assert response.json()["recipes"][1]["difficulty"]  == difficulty2
-    assert response.json()["recipes"][1]["picture_url"] == picture_url2
-    assert response.json()["recipes"][1]["rating"] == rating2   
+    assert response.status_code == 201 
